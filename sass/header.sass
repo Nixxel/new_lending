@@ -1,0 +1,240 @@
+@import "bourbon"
+@import "vars.sass"
+@import "fonts.sass"
+@import "sprite/sprite.sass"
+// @import "app/libs/jquery/jquery-ui.min"  //Если мы хотим подключить стили для  jquery-ui (например для рабочих tooltips)
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $font_RobotoRegular
+	overflow-x: hidden	
+	height: 100vh
+	display: flex
+	flex-direction: column
+	color: $main_txt_color
+h1
+	color: $auxiliary_txt_color
+	font: 60px $font_ROBOTO_THIN
+	letter-spacing: 0.6px
+p
+	padding: 0
+	margin: 0
+h1
+	@include font($color_red, 60px, $font_IntroRegular )
+
+h2
+	@include font($color_main, 48px, $font_IntroRegular )
+	position: relative
+	&:after
+		@extend %before
+		position: absolute
+		bottom: 0
+		left: calc(50% - 338px)
+		width: 676px
+		height: 2px
+		background-color: #FD4027
+html .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+.hidden
+	display: none
+// Модальное окно
+.popup3
+	position: fixed
+	top: 0
+	left: 0
+	display: none
+	overflow: auto
+	width: 100%
+	height: 100%	
+	z-index: 1000
+.popup2
+	position: fixed
+	top: 0
+	left: 0
+	display: none
+	overflow: auto
+	width: 100%
+	height: 100%	
+	z-index: 1000
+.popup
+	position: fixed
+	top: 0
+	left: 0
+	display: none
+	overflow: auto	
+	width: 100%
+	height: 100%	
+	z-index: 1000
+.dm-table
+	display: table
+	width: 100%
+	height: 100%
+.overlay
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	background: rgba(0, 0, 0, 0.65)
+	z-index: 1001
+.dm-cell
+	display: table-cell
+	padding: 0 1em
+	vertical-align: middle
+	text-align: center
+
+.dm-modal
+	display: inline-block
+	padding: 50px 46px 50px 46px
+	max-width: 50em
+	width: 470px		
+	border: 3px solid $color_main
+	text-align: center
+	position: relative	
+	animation: fade .8s
+	background-color: #fff
+	border-radius: 20px
+	z-index: 1002
+	.modal_form_input_wrap
+		position: relative
+		display: block
+		.modal_input_error
+			width: 141px
+			height: 35px
+			display: none
+			position: absolute
+			right: -25px
+			top: 40px
+			padding-left: 10px
+			font: 15px/35px $font_MyriadPro_Regular
+			background-color: #F4F4F4
+			border: 1px solid #C8C8C8
+			-webkit-border-radius: 5px
+			border-radius: 5px
+			-webkit-box-shadow: 0 0 10px rgba(0,0,0,.3)
+			box-shadow: 0 0 10px rgba(0,0,0,.3)
+			z-index: 100
+			&.input_error_email
+				width: 215px
+			&.input_error_phone
+				width: 235px
+			&.form_error
+				display: block
+		.modal_error_chest_img
+			width: 9px
+			position: relative
+			background-image: url('../img/modal_error_chest_img.png')
+		.modal_error_triangle
+			width: 9px
+			position: relative
+			background-image: url('../img/modal_error_triangle.png')
+		.modal_error_chest_img
+			top: -33px
+			left: 0				
+			height: 9px
+		.modal_error_triangle
+			top: -43px
+			left: 10px				
+			height: 8px			
+		
+
+	label
+		margin-bottom: 7px
+		margin-left: 5px
+		text-align: left
+		display: block
+		font: 14px $font_MyriadPro_Bold
+		color: $main_txt_color
+		&.active
+			color: $color_main
+	input
+		width: 100%
+		height: 40px
+		margin-bottom: 10px
+		padding-left: 20px
+		border: none		
+		background-color: #F4F4F4		
+		border-radius: 5px		
+		box-shadow: 0 1px 0 rgba(0,0,2,.28)		
+		transition: 1s
+		&:focus		
+			outline: 0
+			box-shadow: 0 1px 0 rgba(255,81,46,.88)
+	
+	.sucess_mail
+		display: none
+		color: $color_main
+		font: 24px $font_MyriadPro_Bold
+		&.active
+			display: block
+	input[type=submit]
+		margin-bottom: 0
+		margin-top: 20px
+		padding-left: 0
+		padding-right: 0
+		@extend %btn
+
+.close
+	position: absolute
+	right: 25px
+	top: 25px
+	width: 35px
+	height: 36px
+	display: block
+	background: url('../img/modal_close.png') 0 0 no-repeat
+// конец модального
+// Header 
+.header
+	text-align: center
+
+.header_logo
+	display: inline-block
+	float: left
+	margin-top: 10px
+	margin-left: 6px 
+	a
+		color: $main_txt_color
+		font: 34px $font_ROBOTO_BLACK		
+		&:hover
+			text-decoration: none
+.header_nav		
+	display: inline-block
+	position: relative	
+	ul
+		
+		li		
+			list-style: none
+			display: inline-block
+.btn
+	@extend %btn
+.main_content
+	text-align: center
+	flex: 1 0 auto
+// Секция 
+// Секция 
+// Секция 
