@@ -16,7 +16,6 @@ body
 	display: flex
 	flex-direction: column
 	color: $main_txt_color
-	background: url(../img/bg.jpg) center top no-repeat
 h1
 	color: $auxiliary_txt_color
 	font: 60px $font_ROBOTO_THIN
@@ -26,7 +25,6 @@ p
 	margin: 0
 h1
 	@include font($color_red, 60px, $font_IntroRegular )
-
 h2
 	@include font($color_main, 48px, $font_IntroRegular )
 	position: relative
@@ -220,7 +218,6 @@ html .loader
 // Header 
 .header
 	text-align: center
-
 	&_logo
 		display: inline-block
 		float: left
@@ -232,22 +229,49 @@ html .loader
 	&_nav
 		display: inline-block
 		position: relative
+		margin: 27px 0 0 12%
 		ul
 			padding: 0
 			margin: 0
 			li
 				list-style: none
 				display: inline-block
+				margin-right: 24px
+				&:last-child
+					margin-right: 0
 				a
 					@include font($color_white, 14px, $font_RobotoLight)
 					&:hover
 						text-decoration: none
-
+						color: $color_red
+	&_info
+		margin-top: 15px
+		float: right
+		.header_phone
+			@include font($color_white, 18px, $font_RobotoBold)
+			&:before
+				@extend %before
+				@include sprite($icon-header-phone)
+				margin: -2px 6px 0 0
+			&:hover
+				text-decoration: none
+		.order_callback
+			display: table
+			margin: 5px 0 0 auto
+			border: none
+			background: none
+			border-bottom: 1px solid $color_red
+			@include font($color_red, 14px, $font_RobotoBold, 13px)
+			outline: none
+			padding: 0
+			transition: 0.5s all
+			&:hover
+				color: $color_white
+				border-color: $color_white
 .btn
 	@extend %btn
 .main_content
 	text-align: center
-	flex: 1 0 auto
 // Секция 
 // Секция 
 // Секция 
