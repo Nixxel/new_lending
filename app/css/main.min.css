@@ -649,11 +649,11 @@
 .owl-carousel.owl-hidden{opacity:0}
 .owl-carousel .owl-refresh .owl-item{display:none}
 .owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.foot_phone,.owl-carousel.owl-rtl .owl-item{float:right}
 .owl-carousel .owl-item img{display:block;width:100%;-webkit-transform-style:preserve-3d;transform-style:preserve-3d}
 .owl-carousel.owl-text-select-on .owl-item{-webkit-user-select:auto;-moz-user-select:auto;-ms-user-select:auto;user-select:auto}
 .owl-carousel .owl-grab{cursor:move;cursor:-webkit-grab;cursor:-o-grab;cursor:-ms-grab;cursor:grab}
 .owl-carousel.owl-rtl{direction:rtl}
-.owl-carousel.owl-rtl .owl-item{float:right}
 .no-js .owl-carousel{display:block}
 .owl-carousel .owl-item .owl-lazy{opacity:0;-webkit-transition:opacity .4s ease;transition:opacity .4s ease}
 .owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}
@@ -667,7 +667,12 @@
 ::-moz-placeholder{color:#666;opacity:1}
 :-ms-input-placeholder{color:#666;opacity:1}
 body input:focus:required:invalid,body input:required:valid,body textarea:focus:required:invalid,body textarea:required:valid{color:#666}
-.footer{background-color:#333;height:200px;-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto}
+.foot_phone{margin-top:110px}
+.foot_main{font:20px IntroRegular;color:#fff}
+.foot_team{margin-top:80px;margin-bottom:0}
+.foot_white{font:54px IntroRegular;color:#fff;margin:0}
+.foot_lawer{margin-top:80px;text-align:center;font:15px RobotoRegular;color:#fff}
+.footer{background-color:#1c1f21;height:400px;-webkit-box-flex:0;-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto}
 @media only screen and (max-width:768px){.animated{-webkit-transition-property:none!important;transition-property:none!important;-ms-transform:none!important;-webkit-transform:none!important;transform:none!important;-webkit-animation:none!important;animation:none!important}
 }
 @media only screen and (min-width:1200px){.container{width:1200px}
