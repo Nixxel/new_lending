@@ -12,7 +12,7 @@ h2:after{content:'';display:inline-block;position:absolute;bottom:0;left:-webkit
 @font-face{font-family:IntroRegular;font-style:normal;font-weight:400;src:url('../fonts/IntroRegular/intro__(regular).eot?#iefix') format("embedded-opentype"),url('../fonts/IntroRegular/intro__(regular).woff') format("woff"),url('../fonts/IntroRegular/intro__(regular).ttf') format("truetype")}
 @font-face{font-family:MyriadPro-Regular;font-style:normal;font-weight:400;src:url(../fonts/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/MyriadPro-Regular/MyriadPro-Regular.woff) format("woff"),url(../fonts/MyriadPro-Regular/MyriadPro-Regular.ttf) format("truetype")}
 @font-face{font-family:MyriadPro-Bold;font-style:normal;font-weight:400;src:url(../fonts/MyriadPro-Bold/MyriadPro-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/MyriadPro-Bold/MyriadPro-Bold.woff) format("woff"),url(../fonts/MyriadPro-Bold/MyriadPro-Bold.ttf) format("truetype")}
-body{font-size:16px;min-width:320px;line-height:1.6;font-family:RobotoRegular,Arial,sans-serif;overflow-x:hidden;height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;color:#262626}
+body{font-size:16px;min-width:320px;line-height:1.6;font-family:RobotoRegular,Arial,sans-serif;overflow-x:hidden;height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;color:#262626;background:url(../img/bg.jpg) center top no-repeat}
 h1{letter-spacing:.6px;color:#fd4027;font:60px IntroRegular,Arial,sans-serif;line-height:1.6}
 p{padding:0;margin:0}
 h2{color:#545656;font:48px IntroRegular,Arial,sans-serif;line-height:1.6}
@@ -41,8 +41,12 @@ html .loader .loader_inner{background-image:url(../img/preloader.gif);background
 .close,.dm-modal .sucess_mail.active{display:block}
 .dm-modal input[type=submit]{margin-bottom:0;margin-top:20px;padding-left:0;padding-right:0}
 .close{position:absolute;right:25px;top:25px;width:35px;height:36px;background:url(../img/modal_close.png) no-repeat}
-.header_logo{display:inline-block;float:left;margin-top:10px;margin-left:6px}
+.fixed_menu{position:fixed;top:0;left:0;width:100%;background:rgba(84,86,86,.5)}
+.header_logo{display:inline-block;float:left;margin-top:10px;margin-left:-6px}
 .header_logo a svg{width:140px}
 .header_nav{display:inline-block;position:relative}
+.header_nav ul{padding:0;margin:0}
 .header_nav ul li{list-style:none;display:inline-block}
+.header_nav ul li a{color:#fff;font:14px RobotoLight,Arial,sans-serif;line-height:1.6}
+.header_nav ul li a:hover{text-decoration:none}
 .main_content{-webkit-box-flex:1;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}
