@@ -16,6 +16,7 @@ body
 	display: flex
 	flex-direction: column
 	color: $main_txt_color
+	background: url(../img/bg.jpg) center top no-repeat
 h1
 	color: $auxiliary_txt_color
 	font: 60px $font_ROBOTO_THIN
@@ -209,7 +210,12 @@ html .loader
 	background: url('../img/modal_close.png') 0 0 no-repeat
 // конец модального
 // Fixed menu
-
+.fixed_menu
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	background: rgba(84, 86, 86, 0.5)
 // 
 // Header 
 .header
@@ -219,7 +225,7 @@ html .loader
 		display: inline-block
 		float: left
 		margin-top: 10px
-		margin-left: 6px
+		margin-left: -6px
 		a
 			svg
 				width: 140px
@@ -227,10 +233,16 @@ html .loader
 		display: inline-block
 		position: relative
 		ul
-
+			padding: 0
+			margin: 0
 			li
 				list-style: none
 				display: inline-block
+				a
+					@include font($color_white, 14px, $font_RobotoLight)
+					&:hover
+						text-decoration: none
+
 .btn
 	@extend %btn
 .main_content
