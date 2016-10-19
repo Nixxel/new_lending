@@ -208,28 +208,29 @@ html .loader
 	display: block
 	background: url('../img/modal_close.png') 0 0 no-repeat
 // конец модального
+// Fixed menu
+
+// 
 // Header 
 .header
 	text-align: center
 
-.header_logo
-	display: inline-block
-	float: left
-	margin-top: 10px
-	margin-left: 6px 
-	a
-		color: $main_txt_color
-		font: 34px $font_ROBOTO_BLACK		
-		&:hover
-			text-decoration: none
-.header_nav		
-	display: inline-block
-	position: relative	
-	ul
-		
-		li		
-			list-style: none
-			display: inline-block
+	&_logo
+		display: inline-block
+		float: left
+		margin-top: 10px
+		margin-left: 6px
+		a
+			svg
+				width: 140px
+	&_nav
+		display: inline-block
+		position: relative
+		ul
+
+			li
+				list-style: none
+				display: inline-block
 .btn
 	@extend %btn
 .main_content
