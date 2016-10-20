@@ -9,6 +9,15 @@ $(function() {
 });
 
 $(document).ready(function() {
+
+    $('.header_form input').bind('input', function() {
+        if( $(this).val() != "") {
+            $(this).addClass('active');
+        } else {
+            $(this).removeClass('active');
+        }
+    });
+
     // для инициализации tooltips
     // $( document ).tooltip({
     //   track: true

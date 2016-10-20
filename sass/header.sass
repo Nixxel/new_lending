@@ -11,20 +11,17 @@ body
 	position: relative
 	line-height: 1.6
 	font-family: $font_RobotoRegular
-	overflow-x: hidden	
-	height: 100vh
-	display: flex
-	flex-direction: column
+	overflow-x: hidden
 	color: $main_txt_color
-h1
-	color: $auxiliary_txt_color
-	font: 60px $font_ROBOTO_THIN
-	letter-spacing: 0.6px
+
 p
 	padding: 0
 	margin: 0
 h1
-	@include font($color_red, 60px, $font_IntroRegular )
+	@include font($color_red, 60px, $font_IntroRegular, 76px )
+	span
+		color: $color_white
+		font-size: 55px
 h2
 	@include font($color_main, 48px, $font_IntroRegular )
 	position: relative
@@ -122,44 +119,44 @@ html .loader
 	.modal_form_input_wrap
 		position: relative
 		display: block
-		.modal_input_error
-			width: 141px
-			height: 35px
-			display: none
-			position: absolute
-			right: -25px
-			top: 40px
-			padding-left: 10px
-			font: 15px/35px $font_MyriadPro_Regular
-			background-color: #F4F4F4
-			border: 1px solid #C8C8C8
-			-webkit-border-radius: 5px
-			border-radius: 5px
-			-webkit-box-shadow: 0 0 10px rgba(0,0,0,.3)
-			box-shadow: 0 0 10px rgba(0,0,0,.3)
-			z-index: 100
-			&.input_error_email
-				width: 215px
-			&.input_error_phone
-				width: 235px
-			&.form_error
-				display: block
-		.modal_error_chest_img
-			width: 9px
-			position: relative
-			background-image: url('../img/modal_error_chest_img.png')
-		.modal_error_triangle
-			width: 9px
-			position: relative
-			background-image: url('../img/modal_error_triangle.png')
-		.modal_error_chest_img
-			top: -33px
-			left: 0				
-			height: 9px
-		.modal_error_triangle
-			top: -43px
-			left: 10px				
-			height: 8px			
+.modal_input_error
+	width: 141px
+	height: 35px
+	display: none
+	position: absolute
+	right: -25px
+	top: 40px
+	padding-left: 10px
+	font: 15px/35px $font_MyriadPro_Regular
+	background-color: #F4F4F4
+	border: 1px solid #C8C8C8
+	-webkit-border-radius: 5px
+	border-radius: 5px
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.3)
+	box-shadow: 0 0 10px rgba(0,0,0,.3)
+	z-index: 100
+	&.input_error_email
+		width: 215px
+	&.input_error_phone
+		width: 235px
+	&.form_error
+		display: block
+.modal_error_chest_img
+	width: 9px
+	position: relative
+	background-image: url('../img/modal_error_chest_img.png')
+.modal_error_triangle
+	width: 9px
+	position: relative
+	background-image: url('../img/modal_error_triangle.png')
+.modal_error_chest_img
+	top: -33px
+	left: 0
+	height: 9px
+.modal_error_triangle
+	top: -43px
+	left: 10px
+	height: 8px
 		
 
 	label
@@ -213,11 +210,31 @@ html .loader
 	top: 0
 	left: 0
 	width: 100%
+	z-index: 10
 	background: rgba(84, 86, 86, 0.5)
 // 
 // Header 
 .header
 	text-align: center
+	background: url(../img/bg_header.jpg) center top no-repeat
+	background-size: cover
+	height: 100vh
+	display: flex;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-align-content: flex-start;
+	-ms-flex-line-pack: start;
+	align-content: flex-start;
+	perspective: 1000px;
+	min-height: 445px
 	&_logo
 		display: inline-block
 		float: left
@@ -268,6 +285,53 @@ html .loader
 			&:hover
 				color: $color_white
 				border-color: $color_white
+	&_form
+		input[type=text]
+			width: 100%
+			height: 60px
+			border: none
+			background-color: rgba(255,255,255,.25)
+			border-radius: 5px
+			outline: none
+			@include font($color_main, 18px, $font_RobotoRegular)
+			padding-left: 20px
+			&:focus
+				background: #fff
+			&.active
+				background: #fff
+		*::-webkit-input-placeholder
+			color: $color_white
+			opacity: 1
+		*:-moz-placeholder
+			color: $color_white
+			opacity: 1
+		*::-moz-placeholder
+			color: $color_white
+			opacity: 1
+		*:-ms-input-placeholder
+			color: $color_white
+			opacity: 1
+		input[type=submit]
+			width: 100%
+			margin-top: 40px
+	.button_go_portfolio
+		margin-bottom: 40px
+		bottom: 6px
+		position: absolute
+		width: 100%
+		left: 0
+		a:hover:after
+			animation-name: none
+		a:after
+			@extend %before
+			@include sprite($icon-header-arrow)
+			bottom: -25px
+			left: 50%
+			animation-name: bounce
+			animation-direction: normal
+			animation-duration: 2s
+			animation-iteration-count: infinite
+			margin-left: -14px
 .btn
 	@extend %btn
 .main_content
