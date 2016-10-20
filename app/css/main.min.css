@@ -660,6 +660,7 @@
 .owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;-webkit-transition:scale .1s ease;transition:scale .1s ease}
 .owl-carousel .owl-video-play-icon:hover{-webkit-transition:scale(1.3,1.3);transition:scale(1.3,1.3)}
 .owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}
+.icon_clock,.icon_investments,.icon_payback{display:inline-block;background-image:url(../img/sprite.png)}
 .owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;-webkit-transition:opacity .4s ease;transition:opacity .4s ease}
 .owl-carousel .owl-video-frame{position:relative;z-index:1}
 ::-webkit-input-placeholder{color:#666;opacity:1}
@@ -667,6 +668,27 @@
 ::-moz-placeholder{color:#666;opacity:1}
 :-ms-input-placeholder{color:#666;opacity:1}
 body input:focus:required:invalid,body input:required:valid,body textarea:focus:required:invalid,body textarea:required:valid{color:#666}
+.icon_investments{background-position:-102px -298px;width:102px;height:104px}
+.icon_payback{background-position:-204px -298px;width:96px;height:103px}
+.icon_clock{background-position:0 -298px;width:102px;height:106px}
+.icon_why_we_1,.icon_why_we_2,.icon_why_we_3,.icon_why_we_4,.icon_why_we_5,.icon_why_we_6{background-image:url(../img/sprite.png);width:149px;height:149px;display:inline-block}
+.icon_why_we_1{background-position:0 0}
+.icon_why_we_2{background-position:-298px -149px}
+.icon_why_we_3{background-position:-298px 0}
+.icon_why_we_4{background-position:-149px -149px}
+.icon_why_we_5{background-position:0 -149px}
+.icon_why_we_6{background-position:-149px 0}
+.what_is_landing{padding:58px 0 116px;background:url(../img/what_is_landing_bg.jpg)}
+.what_is_landing .item{margin-top:53px;text-align:center}
+.what_is_landing .item i{margin-bottom:17px}
+.what_is_landing .item p{color:#545656;font:14px RobotoRegular,Arial,sans-serif;line-height:18px}
+.what_is_landing .item p span{color:#fd4027}
+.what_is_landing .item .title{color:#545656;font:20px RobotoBold,Arial,sans-serif;line-height:1.6;margin-bottom:5px}
+.why_we{background:url(../img/why_we_bg.jpg) center top no-repeat}
+.why_we .item{margin-bottom:40px}
+.why_we .item i{vertical-align:middle;margin-right:10px}
+.why_we .item p{display:inline-block;vertical-align:middle;color:#fd4027;font:30px RobotoBlak,Arial,sans-serif;line-height:24px}
+.why_we .item p span{color:#545656;font:18px RobotoBlak,Arial,sans-serif;line-height:24px}
 .foot_phone{margin-top:110px}
 .foot_main{font:20px IntroRegular;color:#fff}
 .foot_team{margin-top:80px;margin-bottom:0}

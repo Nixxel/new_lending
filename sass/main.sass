@@ -29,15 +29,68 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
-//	Секция 
-//	Секция 
-//	Секция
-//	Секция
-//	Секция 
-//	Секция 
-//	Секция
-//	Секция
+// Start style icon
+.icon_investments
+    display: inline-block
+    @include sprite($icon-investments)
+.icon_payback
+    display: inline-block
+    @include sprite($icon-payback)
+.icon_clock
+    display: inline-block
+    @include sprite($icon-clock)
+.icon_why_we_1
+    display: inline-block
+    @include sprite($why-we1)
+.icon_why_we_2
+    display: inline-block
+    @include sprite($why-we2)
+.icon_why_we_3
+    display: inline-block
+    @include sprite($why-we3)
+.icon_why_we_4
+    display: inline-block
+    @include sprite($why-we4)
+.icon_why_we_5
+    display: inline-block
+    @include sprite($why-we5)
+.icon_why_we_6
+    display: inline-block
+    @include sprite($why-we6)
+// End style icon
 
+// Start what_is_landing
+.what_is_landing
+    padding: 58px 0 116px
+    background: url(../img/what_is_landing_bg.jpg) repeat
+    .item
+        margin-top: 53px
+        text-align: center
+        i
+            margin-bottom: 17px
+        p
+            @include font($color_main, 14px, $font_RobotoRegular, 18px)
+            span
+                color: $color_red
+        .title
+            @include font($color_main, 20px, $font_RobotoBold)
+            margin-bottom: 5px
+// End what_is_landing
+// Start Why We
+.why_we
+    background: url(../img/why_we_bg.jpg) center top no-repeat
+    .item
+        margin-bottom: 40px
+        i
+            vertical-align: middle
+            margin-right: 10px
+        p
+            display: inline-block
+            vertical-align: middle
+            @include font($color_red, 30px, $font_ROBOTO_BLACK, 24px)
+            span
+                @include font($color_main, 18px, $font_ROBOTO_BLACK, 24px)
+// End Why We
 
 // Секия footer
 .foot_phone
