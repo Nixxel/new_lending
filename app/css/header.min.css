@@ -1,7 +1,9 @@
 body,h2{position:relative}
+.dm-cell,.dm-modal,h2{text-align:center}
 .btn,.modal_error_triangle input[type=submit]{width:301px;height:60px;background:0 0;border:1px solid #FD4027;-webkit-border-radius:5px;border-radius:5px;color:#fd4027;font:18px RobotoRegular,Arial,sans-serif;line-height:1.6}
 .btn:hover,.modal_error_triangle input[type=submit]:hover{background-color:#FD2233;color:#fff;font:18px RobotoBold,Arial,sans-serif;line-height:1.6}
 .btn:focus,.modal_error_triangle input[type=submit]:focus{background-color:#FD2233;color:#fff;font:18px RobotoBold,Arial,sans-serif;line-height:1.6;outline:0}
+h1,h2 span{color:#fd4027}
 .header .button_go_portfolio a:after,.header_info .header_phone:before,h2:after{content:'';display:inline-block;vertical-align:middle}
 @font-face{font-family:RobotoRegular;font-style:normal;font-weight:400;src:url(../fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoRegular/RobotoRegular.woff) format("woff"),url(../fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")}
 @font-face{font-family:RobotoBlak;font-style:normal;font-weight:400;src:url(../fonts/ROBOTO-BLACK/ROBOTO-BLACK.eot?#iefix) format("embedded-opentype"),url(../fonts/ROBOTO-BLACK/ROBOTO-BLACK.woff) format("woff"),url(../fonts/ROBOTO-BLACK/ROBOTO-BLACK.ttf) format("truetype")}
@@ -13,7 +15,7 @@ body,h2{position:relative}
 @font-face{font-family:MyriadPro-Bold;font-style:normal;font-weight:400;src:url(../fonts/MyriadPro-Bold/MyriadPro-Bold.eot?#iefix) format("embedded-opentype"),url(../fonts/MyriadPro-Bold/MyriadPro-Bold.woff) format("woff"),url(../fonts/MyriadPro-Bold/MyriadPro-Bold.ttf) format("truetype")}
 body{font-size:16px;min-width:320px;line-height:1.6;font-family:RobotoRegular,Arial,sans-serif;overflow-x:hidden;color:#262626}
 p{padding:0;margin:0}
-h1{color:#fd4027;font:60px IntroRegular,Arial,sans-serif;line-height:76px}
+h1{font:60px IntroRegular,Arial,sans-serif;line-height:76px}
 h1 span{color:#fff;font-size:55px}
 h2{color:#545656;font:48px IntroRegular,Arial,sans-serif;line-height:1.6}
 h2:after{position:absolute;bottom:0;left:-webkit-calc(50% - 338px);left:calc(50% - 338px);width:676px;height:2px;background-color:#FD4027}
@@ -24,8 +26,8 @@ html .loader .loader_inner{background-image:url(../img/preloader.gif);background
 .popup,.popup2,.popup3{display:none;overflow:auto;z-index:1000}
 .dm-table{display:table;width:100%;height:100%}
 .overlay{background:rgba(0,0,0,.65);z-index:1001}
-.dm-cell{display:table-cell;padding:0 1em;vertical-align:middle;text-align:center}
-.dm-modal{display:inline-block;padding:50px 46px;max-width:50em;width:470px;border:3px solid #545656;text-align:center;position:relative;-webkit-animation:fade .8s;animation:fade .8s;background-color:#fff;-webkit-border-radius:20px;border-radius:20px;z-index:1002}
+.dm-cell{display:table-cell;padding:0 1em;vertical-align:middle}
+.dm-modal{display:inline-block;padding:50px 46px;max-width:50em;width:470px;border:3px solid #545656;position:relative;-webkit-animation:fade .8s;animation:fade .8s;background-color:#fff;-webkit-border-radius:20px;border-radius:20px;z-index:1002}
 .dm-modal .modal_form_input_wrap{position:relative;display:block}
 .modal_input_error{width:141px;height:35px;display:none;position:absolute;right:-25px;top:40px;padding-left:10px;font:15px/35px MyriadPro-Regular,Arial,sans-serif;background-color:#F4F4F4;border:1px solid #C8C8C8;-webkit-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 0 10px rgba(0,0,0,.3);box-shadow:0 0 10px rgba(0,0,0,.3);z-index:100}
 .modal_input_error.input_error_email{width:215px}
