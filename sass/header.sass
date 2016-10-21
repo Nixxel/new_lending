@@ -117,8 +117,7 @@ html .loader
 	display: inline-block
 	padding: 50px 46px 50px 46px
 	max-width: 50em
-	width: 470px		
-	border: 3px solid $color_main
+	width: 470px
 	text-align: center
 	position: relative	
 	animation: fade .8s
@@ -159,15 +158,15 @@ html .loader
 	position: relative
 	background-image: url('../img/modal_error_triangle.png')
 .modal_error_chest_img
-	top: -33px
-	left: 0
+	top: -30px
+	left: -2px
 	height: 9px
 .modal_error_triangle
 	top: -43px
 	left: 10px
 	height: 8px
 		
-
+.popup
 	label
 		margin-bottom: 7px
 		margin-left: 5px
@@ -179,17 +178,15 @@ html .loader
 			color: $color_main
 	input
 		width: 100%
-		height: 40px
+		height: 58px
 		margin-bottom: 10px
 		padding-left: 20px
-		border: none		
-		background-color: #F4F4F4		
-		border-radius: 5px		
-		box-shadow: 0 1px 0 rgba(0,0,2,.28)		
+		background-color: #fff
+		border-radius: 5px
 		transition: 1s
-		&:focus		
+		border: 1px solid #979696
+		&:focus
 			outline: 0
-			box-shadow: 0 1px 0 rgba(255,81,46,.88)
 	
 	.sucess_mail
 		display: none
@@ -197,21 +194,36 @@ html .loader
 		font: 24px $font_MyriadPro_Bold
 		&.active
 			display: block
+	.res_mail
+		color: $color_main
+		font: 24px $font_MyriadPro_Bold
 	input[type=submit]
+		width: 100%
 		margin-bottom: 0
 		margin-top: 20px
 		padding-left: 0
 		padding-right: 0
-		@extend %btn
-
+		@extend %btn_fill
+	.information_transmitted
+		@include font(#434b52, 12px, $font_RobotoRegular)
+		text-align: center
+		margin-top: 10px
+	.form_title
+		@include font($color_main, 30px, $font_IntroRegular)
+		text-align: center
+		margin-bottom: 30px
 .close
+	@include font($color_red, 18px, $font_IntroRegular)
 	position: absolute
 	right: 25px
 	top: 25px
-	width: 35px
-	height: 36px
 	display: block
-	background: url('../img/modal_close.png') 0 0 no-repeat
+	&:before
+		content: 'x'
+	&:hover
+		text-decoration: none
+		color: #fd703f
+	
 // конец модального
 // Fixed menu
 .fixed_menu

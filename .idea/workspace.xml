@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="642fa76b-0db7-4b56-8d1c-4a4458c4bc71" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/img/sprite.png" afterPath="$PROJECT_DIR$/app/img/sprite.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/header.min.css" afterPath="$PROJECT_DIR$/app/css/header.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/main.min.css" afterPath="$PROJECT_DIR$/app/css/main.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/common.js" afterPath="$PROJECT_DIR$/app/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mail.php" afterPath="$PROJECT_DIR$/app/mail.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_media.sass" afterPath="$PROJECT_DIR$/sass/_media.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_vars.sass" afterPath="$PROJECT_DIR$/sass/_vars.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/header.sass" afterPath="$PROJECT_DIR$/sass/header.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/main.sass" afterPath="$PROJECT_DIR$/sass/main.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sprite/sprite.sass" afterPath="$PROJECT_DIR$/sprite/sprite.sass" />
     </list>
     <ignored path="landing_new.loc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,29 +30,19 @@
     <favorites_list name="landing_new.loc" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4081066">
+    <splitter split-orientation="horizontal" split-proportion="0.6612993">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="307">
-                  <caret line="433" column="47" selection-start-line="433" selection-start-column="47" selection-end-line="433" selection-end-column="47" />
+                <state relative-caret-position="228">
+                  <caret line="165" column="60" selection-start-line="165" selection-start-column="51" selection-end-line="165" selection-end-column="60" />
                   <folding>
                     <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                    <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/AppData/Local/Temp/_tcx/18/0/landing.melfori.com/public_html/js/script.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-7336">
-                  <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -61,11 +50,35 @@
           <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/js/common.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+                <state relative-caret-position="442">
+                  <caret line="175" column="70" selection-start-line="175" selection-start-column="70" selection-end-line="175" selection-end-column="70" />
                   <folding>
-                    <element signature="e#4114#5876#0" expanded="false" />
+                    <element signature="e#591#921#0" expanded="false" />
+                    <element signature="e#1021#1666#0" expanded="false" />
+                    <element signature="e#1703#2192#0" expanded="false" />
+                    <element signature="e#2202#2674#0" expanded="false" />
+                    <element signature="e#4148#5910#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mail.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/mail.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mail.php" pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/AppData/Local/Temp/_tcx/18/0/landing.melfori.com/public_html/mail.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1836">
+                  <caret line="108" column="4" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="4" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -87,21 +100,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="header.sass" pinned="false" current-in-tab="false">
+          <file leaf-file-name="header.sass" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/header.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="116">
-                  <caret line="234" column="21" selection-start-line="234" selection-start-column="21" selection-end-line="234" selection-end-column="21" />
+                <state relative-caret-position="219">
+                  <caret line="196" column="13" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_media.sass" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_media.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sass/_media.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="154" column="25" selection-start-line="154" selection-start-column="25" selection-end-line="154" selection-end-column="25" />
+                <state relative-caret-position="612">
+                  <caret line="210" column="31" selection-start-line="210" selection-start-column="31" selection-end-line="210" selection-end-column="31" />
                   <folding />
                 </state>
               </provider>
@@ -110,8 +123,8 @@
           <file leaf-file-name="_vars.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sass/_vars.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="542">
-                  <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+                <state relative-caret-position="508">
+                  <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -151,12 +164,14 @@
         <option value="$USER_HOME$/AppData/Local/Temp/_tcx/17/3/www/intercities.kz/mail.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/_tcx/17/3/instagram.melfori.com/public_html/index.php" />
         <option value="$PROJECT_DIR$/sprite/sprite.sass" />
-        <option value="$PROJECT_DIR$/sass/_vars.sass" />
         <option value="$USER_HOME$/AppData/Local/Temp/_tcx/18/0/landing.melfori.com/public_html/js/script.js" />
-        <option value="$PROJECT_DIR$/sass/header.sass" />
         <option value="$PROJECT_DIR$/sass/main.sass" />
-        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/sass/_vars.sass" />
+        <option value="$USER_HOME$/AppData/Local/Temp/_tcx/18/0/online-1000.ru/public_html/wp-content/themes/faberlic/mail.php" />
         <option value="$PROJECT_DIR$/sass/_media.sass" />
+        <option value="$PROJECT_DIR$/sass/header.sass" />
+        <option value="$PROJECT_DIR$/app/mail.php" />
+        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/js/common.js" />
       </list>
     </option>
@@ -346,12 +361,12 @@
       <workItem from="1476872031149" duration="7692000" />
       <workItem from="1476883188322" duration="8669000" />
       <workItem from="1476948158967" duration="23086000" />
-      <workItem from="1477034040158" duration="14365000" />
+      <workItem from="1477034040158" duration="19460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53812000" />
+    <option name="totallyTimeSpent" value="58907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -399,8 +414,8 @@
           <caret line="528" column="57" selection-start-line="528" selection-start-column="48" selection-end-line="528" selection-end-column="57" />
           <folding>
             <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -410,7 +425,11 @@
         <state relative-caret-position="476">
           <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
           <folding>
-            <element signature="e#4114#5876#0" expanded="false" />
+            <element signature="e#591#921#0" expanded="false" />
+            <element signature="e#1021#1666#0" expanded="false" />
+            <element signature="e#1703#2192#0" expanded="false" />
+            <element signature="e#2202#2674#0" expanded="false" />
+            <element signature="e#4148#5910#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -456,8 +475,8 @@
           <caret line="339" column="21" selection-start-line="339" selection-start-column="21" selection-end-line="339" selection-end-column="21" />
           <folding>
             <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -475,7 +494,11 @@
         <state relative-caret-position="238">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="36" />
           <folding>
-            <element signature="e#4114#5876#0" expanded="false" />
+            <element signature="e#591#921#0" expanded="false" />
+            <element signature="e#1021#1666#0" expanded="false" />
+            <element signature="e#1703#2192#0" expanded="false" />
+            <element signature="e#2202#2674#0" expanded="false" />
+            <element signature="e#4148#5910#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -513,8 +536,8 @@
           <caret line="178" column="26" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="26" />
           <folding>
             <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -644,27 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="421" column="51" selection-start-line="421" selection-start-column="36" selection-end-line="421" selection-end-column="51" />
-          <folding>
-            <marker date="1477034444030" expanded="true" signature="211:433" ph="..." />
-            <marker date="1477034444030" expanded="true" signature="214:427" ph="..." />
-            <marker date="1477034444030" expanded="true" signature="528:712" ph="..." />
-            <marker date="1477034444030" expanded="true" signature="531:706" ph="..." />
-            <marker date="1477034444030" expanded="true" signature="46191:47159" ph="..." />
-            <marker date="1477034444030" expanded="true" signature="46222:47143" ph="{...}" />
-            <marker date="1477034444030" expanded="true" signature="46366:47139" ph="{...}" />
-            <marker date="1477034444030" expanded="true" signature="46427:47135" ph="{...}" />
-            <marker date="1477034444030" expanded="true" signature="46527:47128" ph="{...}" />
-            <marker date="1477034444030" expanded="true" signature="46748:46905" ph="{...}" />
-            <marker date="1477034444030" expanded="true" signature="46938:47122" ph="{...}" />
-            <marker date="1477034444030" expanded="true" signature="46991:47115" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/_tcx/18/0/landing.melfori.com/public_html/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7336">
-          <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -673,22 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="34" column="14" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_vars.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/header.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="234" column="21" selection-start-line="234" selection-start-column="21" selection-end-line="234" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -704,32 +690,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/_tcx/18/0/landing.melfori.com/public_html/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="433" column="47" selection-start-line="433" selection-start-column="47" selection-end-line="433" selection-end-column="47" />
-          <folding>
-            <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="-4274">
+          <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/_tcx/18/0/online-1000.ru/public_html/wp-content/themes/faberlic/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2299">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_vars.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/_media.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="154" column="25" selection-start-line="154" selection-start-column="25" selection-end-line="154" selection-end-column="25" />
+        <state relative-caret-position="612">
+          <caret line="210" column="31" selection-start-line="210" selection-start-column="31" selection-end-line="210" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/header.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="196" column="13" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/_tcx/18/0/landing.melfori.com/public_html/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="108" column="4" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="165" column="60" selection-start-line="165" selection-start-column="51" selection-end-line="165" selection-end-column="60" />
+          <folding>
+            <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+        <state relative-caret-position="442">
+          <caret line="175" column="70" selection-start-line="175" selection-start-column="70" selection-end-line="175" selection-end-column="70" />
           <folding>
-            <element signature="e#4114#5876#0" expanded="false" />
+            <element signature="e#591#921#0" expanded="false" />
+            <element signature="e#1021#1666#0" expanded="false" />
+            <element signature="e#1703#2192#0" expanded="false" />
+            <element signature="e#2202#2674#0" expanded="false" />
+            <element signature="e#4148#5910#0" expanded="false" />
           </folding>
         </state>
       </provider>

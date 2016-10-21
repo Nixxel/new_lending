@@ -126,8 +126,8 @@
     <div class="loader">
         <div class="loader_inner"></div>
     </div>
-    <!-- Модальное окно -->
-    <div class="popup" id="win">
+    <!-- Модальное окно заказать звонок -->
+    <div class="popup" id="win" data-modal="modal-1">
         <div class="dm-table">
             <div class="dm-cell">
                 <div class="dm-modal">
@@ -135,39 +135,38 @@
                     </a>
                     <p class='sucess_mail'>Заявка отправлена</p>
                     <form id="form">
+                        <div class="form_title">ЗАПОЛНИТЕ ФОРМУ</div>
                         <div>
-                            <label>Введите своё имя</label>
                             <div class="modal_form_input_wrap">
                                 <div class="modal_input_error">Заполните поле
                                     <div class="modal_error_triangle"></div>
                                     <div class="modal_error_chest_img"></div>
                                 </div>
-                                <input name="name" class="modal_form_input" type="text">
+                                <input name="name" class="modal_form_input" placeholder="Ваше имя" type="text">
                             </div>
                         </div>
                         <div>
-                            <label>Введите свой телефон</label>
                             <div class="modal_form_input_wrap">
                                 <div class="modal_input_error">Заполните поле
                                     <div class="modal_error_triangle"></div>
                                     <div class="modal_error_chest_img"></div>
                                 </div>
-                                <input name="phone" class="modal_form_phone" type="text">
+                                <input name="phone" class="modal_form_phone" placeholder="Ваш телефон" type="text">
                             </div>
                         </div>
                         <div>
-                            <label>Введите свой e-mail</label>
                             <div class="modal_form_input_wrap">
                                 <div class="modal_input_error">Заполните поле
                                     <div class="modal_error_triangle"></div>
                                     <div class="modal_error_chest_img"></div>
                                 </div>
-                                <input name="email" class="modal_form_email" type="text">
+                                <input name="email" class="modal_form_email" placeholder="Ваш e-mail" type="text">
                             </div>
                         </div>
-                        <input type="hidden" name="form_name" value="Заказ veloVdelo">
-                        <input type="hidden" name="equipment_parts" value="">
+                        <input type="hidden" name="form_name" value="">
+                        <input type="hidden" name="form_type" value="modal">
                         <input type="submit" value="Отправить">
+                        <p class="information_transmitted">Информация не передается третьим лицам</p>
                     </form>
                 </div>
             </div>
@@ -175,6 +174,20 @@
         <div class="overlay">
         </div>
     </div>
+    <div class="popup" data-modal="modal-res">
+        <div class="dm-table">
+            <div class="dm-cell">
+                <div class="dm-modal">
+                    <a href="#" class="close">
+                    </a>
+                    <p class='res_mail'>Заявка отправлена</p>
+                </div>
+            </div>
+        </div>
+        <div class="overlay">
+        </div>
+    </div>
+
     <!-- Здесь пишем код -->
     <div class="fixed_menu">
         <div class="container">
@@ -288,7 +301,7 @@
                     </button>
                     <div class="header_info">
                         <a class="header_phone" href="tel:342423">38 096 0714622</a>
-                        <button class="order_callback">Заказать звонок</button>
+                        <button class="order_callback modal" data-modal="modal-1" data-info="Заказ обратного звонка.">Заказать звонок</button>
                     </div>
                 </div>
             </div>
@@ -328,6 +341,7 @@
                             </div>
                         </div>
                         <input type="hidden" name="form_name" value="Заявка с самой первой формы">
+                        <input type="hidden" name="form_type" value="normal">
                         <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
                             <input type="submit" class="btn" value="Узнать подробнее">
                         </div>
@@ -461,27 +475,27 @@
                         <div class="item">
                             <i class="who_need_lp1"></i>
                             <p>Бизнес <br>в сфере услуг</p>
-                            <button>Подробнее</button>
+                            <button class="modal" data-modal="modal-1" data-info="Заявка с блока кому нужен lp.">Подробнее</button>
                         </div>
                         <div class="item">
                             <i class="who_need_lp2"></i>
                             <p>Производители уникальных товаров</p>
-                            <button>Подробнее</button>
+                            <button class="modal" data-modal="modal-1" data-info="Заявка с блока кому нужен lp.">Подробнее</button>
                         </div>
                         <div class="item">
                             <i class="who_need_lp4"></i>
                             <p>Оптовой продажи товаров</p>
-                            <button>Подробнее</button>
+                            <button class="modal" data-modal="modal-1" data-info="Заявка с блока кому нужен lp.">Подробнее</button>
                         </div>
                         <div class="item">
                             <i class="who_need_lp5"></i>
                             <p>Культурно-развлекательные заведения</p>
-                            <button>Подробнее</button>
+                            <button class="modal" data-modal="modal-1" data-info="Заявка с блока кому нужен lp.">Подробнее</button>
                         </div>
                         <div class="item">
                             <i class="who_need_lp3"></i>
                             <p>Инфобизнесмены</p>
-                            <button>Подробнее</button>
+                            <button class="modal" data-modal="modal-1" data-info="Заявка с блока кому нужен lp.">Подробнее</button>
                         </div>
                     </div>
                 </div>

@@ -805,9 +805,14 @@ h2:after{width:50%;left:25%}
 .technologies_result .item div{margin-bottom:20px}
 .technologies_result .item div:before{display:none}
 }
+@media only screen and (max-width:620px){.dm-modal{width:90%}
+.dm-modal .form_title{font-size:25px}
+.dm-modal input,.dm-modal input[type=submit]{height:45px;font-size:14px}
+}
 @media only screen and (max-width:480px){.why_we .item{width:100%}
 }
 @media only screen and (max-width:400px){.header_info{display:none}
+.dm-modal{padding:50px 20px 30px}
 }
 @media only screen and (min-width:993px){.header_nav{display:inline-block!important}
 }

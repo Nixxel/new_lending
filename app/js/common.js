@@ -56,7 +56,7 @@ $(document).ready(function() {
         $('button.view-more').click(function() {
             $.getJSON('ajax/portfolio.json', function(data) {
                 if(data.links[countClicksPortfolioForMobile] === undefined) {
-                    $('.view-more').hide(); 
+                    $('.view-more').hide();
                     return;
                 }
                 newPortfolioItem(data);
@@ -88,6 +88,7 @@ $(document).ready(function() {
         }, 1000);
     });
 
+    // Show menu in mobile version
     $('.navbar-toggle').on('click', function(){
         $(this).toggleClass('active');
         $('.header_nav').toggleClass('active');
@@ -169,7 +170,10 @@ $(document).ready(function() {
     });
     // Открываем модальное окно  
     $(".modal").click(function() {
-        $(".popup").toggle("fade", 500).find("form").css('display', 'block');
+        var id = $(this).data('modal');
+        var txt =  $(this).data('info');
+        $(".popup[data-modal="+id+"]").toggle("fade", 500).find("form").css('display', 'block');
+        $(".popup[data-modal="+id+"] input[name=form_name").val(txt); 
         $("body").css({ "overflow": "hidden", "padding-right": "17px" });
 
     });
@@ -183,7 +187,7 @@ $(document).ready(function() {
         $(".popup").hide("clip", 500);
         $("body").css({ "overflow": "inherit", "padding-right": "0" });
     });
-    //  Отправка форм
+    //  Send form
     $("form").submit(function() { // перехватываем все при событии отправки
         var form = $(this); // запишем форму, чтобы потом не было проблем с this
         var error = [];
@@ -269,40 +273,29 @@ $(document).ready(function() {
                     if (data['error']) { // если обработчик вернул ошибку
                         alert(data['error']); // покажем её текст
                     } else { // если все прошло ок
-                        $('.dm-modal form').hide(); // пишем что все ок                
-                        $('.dm-modal .sucess_mail').addClass('active');
 
-                        $('.popup').delay(2000).fadeOut(
-                            function() {
-                                $('.popup').removeClass('active');
-                                form.trigger('reset');
-                                $('.dm-modal .sucess_mail').removeClass('active');
-                                $("#win .close").trigger('click');
-                            }
-                        );
-                        if (data['form'] == "form_2") {
+                        console.log(data['form_type']);
+
+                        if(data['form_type'] == 'modal') {
+                            $('.dm-modal form').hide(); // пишем что все ок
+                            form.trigger('reset');
                             $('.dm-modal .sucess_mail').addClass('active');
-                            $('.popup2').show().delay(2000).fadeOut(
-                                function() {
-                                    $('.popup2').removeClass('active');
-                                    form.trigger('reset');
-                                    $('.dm-modal .sucess_mail').addClass('active');
-                                    $("#win2 .close").trigger('click');
-                                }
-                            );
+                            setTimeout(function(){
+                               form.parents('.popup').hide("clip", 500);
+                                $("body").css({ "overflow": "inherit", "padding-right": "0" });
+                            }, 3000);
                         }
-                        if (data['form'] == "form_3") {
-                            $('.dm-modal form').hide(); // пишем что все ок                
-                            $('.dm-modal .sucess_mail').addClass('active');
-                            $('.popup3').delay(2000).fadeOut(
-                                function() {
-                                    $('.popup3').removeClass('active');
-                                    form.trigger('reset');
-                                    $('.dm-modal .sucess_mail').removeClass('active');
-                                    $("#win3 .close").trigger('click');
-                                }
-                            );
+                        if( data['form_type'] == 'normal' ){
+                            form.trigger('reset');
+                            form.find('input').removeClass('active');
+                            $('.popup[data-modal=modal-res]').toggle("fade", 500);
+                            $("body").css({ "overflow": "hidden", "padding-right": "17px" });
+                            setTimeout(function(){
+                                $('.popup[data-modal=modal-res]').hide("clip", 500);
+                                $("body").css({ "overflow": "inherit", "padding-right": "0" });
+                            }, 3000);
                         }
+
                     }
                 },
                 error: function(xhr, ajaxOptions, thrownError) { // в случае неудачного завершения запроса к серверу
@@ -318,9 +311,10 @@ $(document).ready(function() {
         return false; // вырубаем стандартную отправку формы
     });
 
-    // Высота первого экрана
+    // Height first window
     nain_window_height();
 
+    // Fixed menu
     if ($(window).scrollTop() > 0) {
         $(".fixed_menu").addClass("fixed");
     } else {
@@ -334,11 +328,11 @@ $(".loader_inner").fadeOut();
 $(".loader").delay(400).fadeOut("slow");
 
 $(window).resize(function(){
+    // Height first window
     nain_window_height();
 });
 
 function nain_window_height(){
-
     var h = $(window).height();
     if ( !window.matchMedia("(max-width: 1200px)").matches) {
         if (h < 600) {
