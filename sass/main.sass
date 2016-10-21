@@ -57,6 +57,16 @@ body textarea:required:valid
 .icon_why_we_6
     display: inline-block
     @include sprite($why-we6)
+.who_need_lp1:before
+    @include sprite($who-need-lp1)
+.who_need_lp2:before
+    @include sprite($who-need-lp2)
+.who_need_lp3:before
+    @include sprite($who-need-lp3)
+.who_need_lp4:before
+    @include sprite($who-need-lp4)
+.who_need_lp5:before
+    @include sprite($who-need-lp5)
 // End style icon
 
 // Start what_is_landing
@@ -79,6 +89,8 @@ body textarea:required:valid
 // Start Why We
 .why_we
     background: url(../img/why_we_bg.jpg) center top no-repeat
+    background-size: cover
+    padding-bottom: 70px
     .item
         margin-bottom: 40px
         i
@@ -91,7 +103,217 @@ body textarea:required:valid
             span
                 @include font($color_main, 18px, $font_ROBOTO_BLACK, 24px)
 // End Why We
+// Start technologies_result
+.technologies_result
+    background: url(../img/bg_out_result.jpg) top center no-repeat
+    background-size: cover
+    padding: 71px 0 119px
+    h2
+        color: $color_white
+        line-height: 1.2
+        margin-bottom: 69px
+    .col-sm-5
+        background: rgba(84, 86, 86, 0.83)
+        border-radius: 5px
+        padding: 17px 10px 18px 20px
+        position: relative
+        &:before
+            @extend %before
+            @include sprite($red-arrow)
+            position: absolute
+            z-index: 2
+            top: 100%
+            left: 50%
+        &:nth-child(2):before
+            transform: scaleX(-1)
+            left: 30%
+        &:nth-child(5):before
+            transform: rotate(180deg)
+            left: 30%
+            bottom: 100%
+            top: auto
+        &:nth-child(6):before
+            transform: scaleY(-1)
+            bottom: 100%
+            top: auto
+        p
+            @include font($color_white, 12px, $font_RobotoRegular)
+        .title
+            @include font($color_white, 24px, $font_RobotoBold)
+    .col-lg-12
+        margin: 13px 0 -18px
+        text-align: center
 
+// End technologies_result
+// Start who_need_lp
+.who_need_lp
+    background: url(../img/bg_who_need_lp.jpg) top center no-repeat
+    background-size: cover
+    padding: 70px 0 120px
+    h2
+        color: $color_white
+        line-height: 1.2
+        span
+            color: #fee1b8
+        &:after
+            background-color: #fee1b8
+    .who_need_lp_slider
+        margin-top: 24px
+        .owl-stage-outer
+            .item
+                border-radius: 10px
+                background-color: rgba(252, 254, 250, 0.25)
+                text-align: center
+                padding: 25px 23px 25px 18px
+                border: 2px solid rgba(252, 254, 250, 0)
+                min-height: 369px
+                &:hover
+                    background: #fff
+                    border: 2px solid #FD4027
+                    p
+                        color: #434b52
+                    i
+                        background: $color_red
+                    .who_need_lp1:before
+                        @include sprite($who-need-lp1-hover)
+                    .who_need_lp2:before
+                        @include sprite($who-need-lp2-hover)
+                    .who_need_lp3:before
+                        @include sprite($who-need-lp3-hover)
+                    .who_need_lp4:before
+                        @include sprite($who-need-lp4-hover)
+                        height: 80px
+                    .who_need_lp5:before
+                        @include sprite($who-need-lp5-hover)
+                        width: 81px
+                        height: 80px
+                    button
+                        background: $color_red
+                i
+                    display: inline-block
+                    width: 131px
+                    height: 131px
+                    position: relative
+                    background-color: #434B52
+                    border-radius: 50%
+                    &:before
+                        @extend %before
+                        margin: auto
+                        position: absolute
+                        top: 0
+                        right: 0
+                        bottom: 0
+                        left: 0
+                p
+                    @include font(#fee1b8, 20px, $font_RobotoBold, 24px)
+                    margin-top: 10px
+                button
+                    position: absolute
+                    bottom: 25px
+                    left: 18px
+                    width: calc(100% - 40px)
+                    height: 50px
+                    border-radius: 5px
+                    background: #303c48
+                    border: none
+                    @include font($color_white, 20px, $font_RobotoRegular)
+                    outline: none
+        .owl-prev
+            @include sprite($slider-arrow)
+            position: absolute
+            top: calc(50% - 21px)
+            left: -8%
+            &:hover
+                @include sprite($slider-arrow-hover)
+        .owl-next
+            @include sprite($slider-arrow)
+            position: absolute
+            top: calc(50% - 21px)
+            right: -8%
+            transform: rotate(180deg)
+            &:hover
+                @include sprite($slider-arrow-hover)
+// End who_need_lp
+// Start examples_our_work
+.examples_our_work
+    background: url(../img/bg_portfolio.jpg) center top repeat-y
+    padding: 57px 0 120px
+    h2
+        margin-bottom: 60px
+    figure
+        padding: 5px
+        display: block
+        border-radius: 5px
+        img
+            display: block
+            width: 100%
+            vertical-align: top
+            border: 1px solid #696f75
+            border-radius: 5px
+        &.snip1321
+            position: relative
+            overflow: hidden
+            color: #000000
+            text-align: center
+            perspective: 50em
+            color: #fff
+            &:after
+                background-color: #303C48
+                position: absolute
+                content: ""
+                display: block
+                top: 5px
+                left: 5px
+                right: 5px
+                bottom: 5px
+                transition: all 0.4s ease-in-out
+                transform: rotateX(-90deg)
+                transform-origin: 50% 50%
+                opacity: 0
+                border-radius: 5px
+            &:hover
+                &:after
+                    transform: rotateX(0)
+                    opacity: 0.95
+                figcaption
+                    transform: translateY(-50%)
+                    opacity: 1
+                    transition-delay: 0.2s
+            *
+                box-sizing: padding-box
+                transition: all 0.2s ease-out
+            a
+                left: 0
+                right: 0
+                top: 0
+                bottom: 0
+                position: absolute
+                z-index: 1
+            i:before
+                content: ''
+                display: block
+                margin: 0 auto 20px
+                @include sprite($eye)
+            figcaption
+                top: 45%
+                left: 20px
+                right: 20px
+                position: absolute
+                opacity: 0
+                z-index: 1
+                padding: 0px 35px
+                h4
+                    font-size: 24px
+                    line-height: 1.1
+                    padding-bottom: 10px
+                    margin: 0
+                p
+                    margin: 0
+                    line-height: 1.2
+    .view-more
+        margin-top: 35px
+
+// End examples_our_work
 // Секия footer
 .foot_phone
     float: right

@@ -3,7 +3,10 @@ body,h2{position:relative}
 .btn,.modal_error_triangle input[type=submit]{width:301px;height:60px;background:0 0;border:1px solid #FD4027;-webkit-border-radius:5px;border-radius:5px;color:#fd4027;font:18px RobotoRegular,Arial,sans-serif;line-height:1.6}
 .btn:hover,.modal_error_triangle input[type=submit]:hover{background-color:#FD2233;color:#fff;font:18px RobotoBold,Arial,sans-serif;line-height:1.6}
 .btn:focus,.modal_error_triangle input[type=submit]:focus{background-color:#FD2233;color:#fff;font:18px RobotoBold,Arial,sans-serif;line-height:1.6;outline:0}
+.btn_fill{width:301px;height:60px;background-color:#FD4027;-webkit-border-radius:5px;border-radius:5px;border:none;color:#fff;font:18px RobotoRegular,Arial,sans-serif;line-height:1.6}
+.btn_fill:active,.btn_fill:focus,.btn_fill:hover{background-color:#fd703f}
 h1,h2 span{color:#fd4027}
+.btn_fill:focus{outline:0}
 .header .button_go_portfolio a:after,.header_info .header_phone:before,h2:after{content:'';display:inline-block;vertical-align:middle}
 @font-face{font-family:RobotoRegular;font-style:normal;font-weight:400;src:url(../fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoRegular/RobotoRegular.woff) format("woff"),url(../fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")}
 @font-face{font-family:RobotoBlak;font-style:normal;font-weight:400;src:url(../fonts/ROBOTO-BLACK/ROBOTO-BLACK.eot?#iefix) format("embedded-opentype"),url(../fonts/ROBOTO-BLACK/ROBOTO-BLACK.woff) format("woff"),url(../fonts/ROBOTO-BLACK/ROBOTO-BLACK.ttf) format("truetype")}
@@ -57,7 +60,7 @@ html .loader .loader_inner{background-image:url(../img/preloader.gif);background
 .header_nav ul li a:hover{text-decoration:none;color:#fd4027}
 .header_info{margin-top:15px;float:right}
 .header_info .header_phone{color:#fff;font:18px RobotoBold,Arial,sans-serif;line-height:1.6}
-.header_info .header_phone:before{background-image:url(../img/sprite.png);background-position:-300px -298px;width:26px;height:26px;margin:-2px 6px 0 0}
+.header_info .header_phone:before{background-image:url(../img/sprite.png);background-position:-536px -251px;width:26px;height:26px;margin:-2px 6px 0 0}
 .header_info .header_phone:hover{text-decoration:none}
 .header_info .order_callback{display:table;margin:5px 0 0 auto;border:none;background:0 0;border-bottom:1px solid #fd4027;color:#fd4027;font:14px RobotoBold,Arial,sans-serif;line-height:13px;outline:0;padding:0;-webkit-transition:.5s all;transition:.5s all}
 .header_info .order_callback:hover{color:#fff;border-color:#fff}
@@ -70,4 +73,4 @@ html .loader .loader_inner{background-image:url(../img/preloader.gif);background
 .header_form input[type=submit]{width:100%;margin-top:40px}
 .header .button_go_portfolio{margin-bottom:40px;bottom:6px;position:absolute;width:100%;left:0}
 .header .button_go_portfolio a:hover:after{-webkit-animation-name:none;animation-name:none}
-.header .button_go_portfolio a:after{background-image:url(../img/sprite.png);background-position:-326px -298px;width:28px;height:18px;bottom:-25px;left:50%;-webkit-animation-name:bounce;animation-name:bounce;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;margin-left:-14px}
+.header .button_go_portfolio a:after{background-image:url(../img/sprite.png);background-position:-562px -251px;width:28px;height:18px;bottom:-25px;left:50%;-webkit-animation-name:bounce;animation-name:bounce;-webkit-animation-direction:normal;animation-direction:normal;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;margin-left:-14px}

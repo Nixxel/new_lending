@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
     //SVG Fallback
     // if(!Modernizr.svg) {
@@ -10,6 +10,7 @@ $(function() {
 
 $(document).ready(function() {
 
+    // Добавление фона input при заполнении
     $('.header_form input').bind('input', function() {
         if( $(this).val() != "") {
             $(this).addClass('active');
@@ -17,6 +18,57 @@ $(document).ready(function() {
             $(this).removeClass('active');
         }
     });
+
+    // Карусель в блоке Для кого подходит лендинг пейдж
+    $(".who_need_lp_slider").owlCarousel({
+        loop: true,
+        items: 3,
+        dots: false,
+        nav: true,
+        navText: [],
+        margin: 50,
+    });
+
+    // View more
+    var countClicksPortfolioForMobile = 0;
+    function newPortfolioItem(data) {
+        var figure = $('.view-more-block figure:first').clone();
+        $('.view-more-block').append(figure);
+        $('.view-more-block figure:last img').attr('src', data.links[countClicksPortfolioForMobile].url);
+        $('.view-more-block figure:last h4').text(data.links[countClicksPortfolioForMobile].header);
+        $('.view-more-block figure:last p').text(data.links[countClicksPortfolioForMobile].text);
+        $('.view-more-block figure:last a').attr('href', data.links[countClicksPortfolioForMobile].url_link);
+        $('.view-more-block figure:last').addClass('animated zoomIn');
+        countClicksPortfolioForMobile++;
+    }
+    if($(document).width() <= 768 ) {
+        $('button.view-more').click(function() {
+            $.getJSON('ajax/portfolio.json', function(data) {
+                if(data.links[countClicksPortfolioForMobile] === undefined) {
+                    return;
+                }
+                newPortfolioItem(data);
+            });
+        });
+        $('.navbar-nav > li > a').on('click',function(){
+            $(this).parents('.navbar-collapse').removeClass('in');
+        })
+    }
+    else {
+        $('button.view-more').click(function() {
+            for(var i = 0; i < 3; ++i) {
+                $.getJSON('../ajax/portfolio.json', function(data) {
+                    if(data.links[countClicksPortfolioForMobile] === undefined) {
+                        $('.view-more').hide();
+                        return;
+                    }
+                    newPortfolioItem(data);
+                });
+                console.log(i);
+            }
+
+        });
+    }
 
     // для инициализации tooltips
     // $( document ).tooltip({
@@ -40,13 +92,7 @@ $(document).ready(function() {
     //     }, 500);
     //     return false;
     // });
-    //  Активация слайдера
 
-    // $(".owl-carousel").owlCarousel({
-    //     loop: true,
-    //     items: 1,
-    //     dots: true
-    // });
 
     // Select в модальном окне
     $(document).click(function() {
