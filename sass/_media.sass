@@ -5,16 +5,120 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-	// для фиксированного сайта
-	// body
-	// 	width: 1200px
-
+	h1
+		font-size: 45px
+		line-height: 1.1
+		span
+			font-size: 40px
+	h2
+		font-size: 35px
+		&:after
+			width: 420px
+			left: calc(50% - 210px)
+	.subtitle
+		font-size: 16px
+		line-height: 22px
+	.header
+		height: auto
+		display: block
+		padding-top: 55px
+		&_nav
+			margin: 27px 0 0 8%
+	.why_we
+		.item
+			p
+				font-size: 29px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
-
-
+	.icon_investments
+		display: inline-block
+		@include sprite($icon-investments-sm)
+	.icon_payback
+		display: inline-block
+		@include sprite($icon-payback-sm)
+	.icon_clock
+		display: inline-block
+		@include sprite($icon-clock-sm)
+	.icon_why_we_1
+		display: inline-block
+		@include sprite($why-we1-sm)
+	.icon_why_we_2
+		display: inline-block
+		@include sprite($why-we2-sm)
+	.icon_why_we_3
+		display: inline-block
+		@include sprite($why-we3-sm)
+	.icon_why_we_4
+		display: inline-block
+		@include sprite($why-we4-sm)
+	.icon_why_we_5
+		display: inline-block
+		@include sprite($why-we5-sm)
+	.icon_why_we_6
+		display: inline-block
+		@include sprite($why-we6-sm)
+	.subtitle
+		font-size: 15px
+	.fixed_menu
+		.navbar-toggle
+			display: block
+		.col-lg-12
+			position: static
+	.header
+		&_nav
+			display: block
+			width: 100%
+			position: absolute
+			top: 100%
+			left: -100%
+			transition: left 1s
+			background: rgba(0, 0, 0, 0.8);
+			border-top: 1px solid #fff
+			margin: 0
+			padding: 10px 0 20px
+			&.active
+				left: 0
+				transition: left 1s
+			li
+				display: block
+				width: 100%
+				text-align: center
+				margin: 10px 0
+		&_form
+			margin-top: 70px
+			input[type=text]
+				font-size: 16px
+				height: 45px
+			input[type=submit]
+				font-size: 16px
+				height: 45px
+	.what_is_landing
+		padding: 38px 0 66px
+		.item
+			.title
+				font-size: 18px
+				line-height: 22px
+	.why_we
+		padding: 40px 0 50px
+		.item
+			p
+				font-size: 20px
+				span
+					font-size: 16px
+	.technologies_result
+		.item
+			.title
+				font-size: 20px
+	.who_need_lp
+		.owl-controls
+			display: none
+	.examples_our_work
+		.view-more
+			width: 100%
+			font-size: 16px
+			height: 45px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	
@@ -38,13 +142,57 @@
 		-o-animation: none !important
 		-ms-animation: none !important
 		animation: none !important
-
-
+	h1
+		font-size: 35px
+		span
+			font-size: 30px
+	h2
+		font-size: 27px
+		&:after
+			width: 50%
+			left: 25%
+	.modal_input_error
+		margin-right: 10%
+	.header
+		padding-top: 80px
+		padding-bottom: 100px
+		&_form
+			input
+				&[type=text]
+					margin-bottom: 20px
+				&[type=submit]
+					margin-top: 15px
+		.button_go_portfolio
+			margin-bottom: 20px !important
+	.why_we
+		.item
+			width: 70%
+			margin-left: auto
+			margin-right: auto
+	.technologies_result
+		padding: 40px 0 50px
+		.item
+			div
+				margin-bottom: 20px
+				&:before
+					display: none
+	.who_need_lp
+		padding: 40px 0 50px
+	.examples_our_work
+		padding: 40px 0 50px
+		
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-
-
+	.why_we
+		.item
+			width: 100%
+/*  */
+@media only screen and (max-width : 400px)
+	/**/
+	.header
+		&_info
+			display: none
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
@@ -68,9 +216,11 @@
 
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
+@media only screen and (min-width : 993px)
 	/**/
-
+	.header
+		&_nav
+			display: inline-block !important
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)

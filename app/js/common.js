@@ -27,6 +27,17 @@ $(document).ready(function() {
         nav: true,
         navText: [],
         margin: 50,
+        responsive : {
+            320 : {
+                items: 1
+            },
+            480 : {
+                items: 2
+            },
+            992 : {
+                items: 3
+            }
+}
     });
 
     // View more
@@ -45,6 +56,7 @@ $(document).ready(function() {
         $('button.view-more').click(function() {
             $.getJSON('ajax/portfolio.json', function(data) {
                 if(data.links[countClicksPortfolioForMobile] === undefined) {
+                    $('.view-more').hide(); 
                     return;
                 }
                 newPortfolioItem(data);
@@ -66,9 +78,20 @@ $(document).ready(function() {
                 });
                 console.log(i);
             }
-
         });
     }
+
+    $('.button_go_portfolio a').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 1000);
+    });
+
+    $('.navbar-toggle').on('click', function(){
+        $(this).toggleClass('active');
+        $('.header_nav').toggleClass('active');
+    });
 
     // для инициализации tooltips
     // $( document ).tooltip({
@@ -295,7 +318,48 @@ $(document).ready(function() {
         return false; // вырубаем стандартную отправку формы
     });
 
+    // Высота первого экрана
+    nain_window_height();
+
+    if ($(window).scrollTop() > 0) {
+        $(".fixed_menu").addClass("fixed");
+    } else {
+        $('.fixed_menu').removeClass("fixed");
+    }
+    // remove br
+    remove_br();
 });
 
 $(".loader_inner").fadeOut();
 $(".loader").delay(400).fadeOut("slow");
+
+$(window).resize(function(){
+    nain_window_height();
+});
+
+function nain_window_height(){
+
+    var h = $(window).height();
+    if ( !window.matchMedia("(max-width: 1200px)").matches) {
+        if (h < 600) {
+            $(".button_go_portfolio").css('margin-bottom', '5px');
+        } else {
+            $(".button_go_portfolio").css('margin-bottom', '40px');
+        }
+    }
+}
+// Fixed menu
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 0) {
+        $(".fixed_menu").addClass("fixed");
+    } else {
+        $('.fixed_menu').removeClass("fixed");
+    }
+});
+
+// Remove <br>
+function remove_br(){
+    if ( window.matchMedia("(max-width: 768px)").matches) {
+        $('.subtitle br').remove();
+    }
+}
