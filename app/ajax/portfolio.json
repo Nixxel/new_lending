@@ -1,0 +1,113 @@
+{
+	"links": [
+		{
+			"url" : "img/portfolio/preview/trimmer.png",
+			"header" : "ЖЕНСКИЙ ТРИММЕР",
+			"text"   : "Проработка концепции для максимальной конверсии создание лендинг пейдж.",
+			"url_link" : "page-portfolio/trimmer.html"
+		},
+		{
+			"url" : "img/portfolio/preview/besedki.png",
+			"header" : "БЕСЕДКИ ПОД КЛЮЧ",
+			"text"   : "Мы создали лендинг пейдж с внутренней страницей товара для компании которая занимается производством качественных беседок под ключ.",
+			"url_link" : "page-portfolio/besedki.html"
+		},
+
+		{
+			"url" : "img/portfolio/preview/tractor.jpg",
+			"header" : "АРЕНДА ТРАКТОРА",
+			"text"   : "Создание landing page под ключ по аренде трактора в Воронеже и Воронежской области.",
+			"url_link" : "page-portfolio/tractor-help.html"
+		},
+		{
+			"url" : "img/portfolio/preview/calling_search.jpg",
+			"header" : "BEYOURSELF",
+			"text"   : "Сайт под ключ для профессионального консультанта по поиску призвания.",
+			"url_link" : "page-portfolio/beyourself.html"
+		},
+		{
+			"url" : "img/portfolio/preview/stop-credit.jpg",
+			"header" : "СТОП-КРЕДИТ",
+			"text"   : "Разработка сайта для юридической компании, занимающейся решением кредитными вопросов.",
+			"url_link" : "page-portfolio/stop-credit.html"
+		},
+		{
+			"url" : "img/portfolio/preview/londonvisa.jpg",
+			"header" : "LONDON VISA",
+			"text"   : "Редизайн сайта<br />Помощь в получении визы в США.",
+			"url_link" : "page-portfolio/london-visa.html"
+		},
+		{
+			"url" : "img/portfolio/preview/flowers.jpg",
+			"header" : "SOLFLOWERS",
+			"text"   : "Интернет магазин срезанных цветов и горшечных растений со всего мира.",
+			"url_link" : "page-portfolio/solflowers.html"
+		},
+		{
+			"url" : "img/portfolio/preview/quest.jpg",
+			"header" : "ПОВОРОТ НЕ ТУДА",
+			"text"   : "Верстка и программная часть (онлайн заказ) landing page, по квесту в реальности",
+			"url_link" : "page-portfolio/wrong-turn.html"
+		},
+		
+		{
+			"url" : "img/portfolio/preview/5media.jpg",
+			"header" : "5media",
+			"text"   : "Сайт для рекламного агенства.",
+			"url_link" : "page-portfolio/5media.html"
+		},
+		{
+			"url" : "img/portfolio/preview/architect.jpg",
+			"header" : "Architect",
+			"text"   : "Студия по созданию целевых страниц",
+			"url_link" : "page-portfolio/architect.html"
+		},
+		{
+			"url" : "img/portfolio/preview/country_climat.jpg",
+			"header" : "Город климат",
+			"text"   : "Сайт для компании климатической техники.",
+			"url_link" : "page-portfolio/country-climat.html"
+		}
+		,
+		{
+			"url" : "img/portfolio/preview/aspon.jpg",
+			"header" : "АСПОН",
+			"text"   : "Ассоциация специалистов по оформлению, охране наследства и доверительному управлению наследством",
+			"url_link" : "page-portfolio/aspon.html"
+		}
+		,
+		{
+			"url" : "img/portfolio/preview/secude.jpg",
+			"header" : "СОБЛАЗНИ ЕЁ В СЕТИ",
+			"text"   : "Адаптивная верстка сайта по семинару пикапа в сети",
+			"url_link" : "page-portfolio/secude-her.html"
+		}
+		,
+		{
+			"url" : "img/portfolio/preview/diamond.jpg",
+			"header" : "АЛМАЗ",
+			"text"   : "Группа компаний АЛМАЗ занимается проведением праздников разных форматов",
+			"url_link" : "page-portfolio/diamond.html"
+		}
+		,
+		{
+			"url" : "img/portfolio/preview/proxy.jpg",
+			"header" : "Proxy seller",
+			"text"   : "Сайт по продаже прокси-серверов.",
+			"url_link" : "page-portfolio/proxy-seller.html"
+		}
+		,
+		{
+			"url" : "img/portfolio/preview/auto_associate.jpg",
+			"header" : "АВТОЮРИСТ",
+			"text"   : "Обучающий семинар в Самаре.",
+			"url_link" : "page-portfolio/auto-associate.html"
+		},
+		{
+			"url" : "img/portfolio/preview/bubble.jpg",
+			"header" : "BUBBLE-DOM",
+			"text"   : "Товары для ШОУ гигантских мыльных пузырей.",
+			"url_link" : "page-portfolio/bubble-dom.html"
+		}
+	]
+}
