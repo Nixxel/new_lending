@@ -173,7 +173,7 @@ $(document).ready(function() {
         var id = $(this).data('modal');
         var txt =  $(this).data('info');
         $(".popup[data-modal="+id+"]").toggle("fade", 500).find("form").css('display', 'block');
-        $(".popup[data-modal="+id+"] input[name=form_name").val(txt); 
+        $(".popup[data-modal="+id+"] input[name=form_name").val(txt);
         $("body").css({ "overflow": "hidden", "padding-right": "17px" });
 
     });
@@ -182,9 +182,9 @@ $(document).ready(function() {
         $("body").css({ "overflow": "inherit", "padding-right": "0" });
     });
     // закрываем модальное окно
-    $("#win .close").click(function(e) {
+    $(".popup .close").click(function(e) {
         e.preventDefault();
-        $(".popup").hide("clip", 500);
+        $(this).parents(".popup").toggle("fade", 500);
         $("body").css({ "overflow": "inherit", "padding-right": "0" });
     });
     //  Send form
