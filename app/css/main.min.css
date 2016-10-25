@@ -713,7 +713,7 @@ body input:focus:required:invalid,body input:required:valid,body textarea:focus:
 .who_need_lp h2 span{color:#fee1b8}
 .who_need_lp h2:after{background-color:#fee1b8}
 .who_need_lp .who_need_lp_slider{margin-top:24px}
-.who_need_lp .who_need_lp_slider .owl-stage-outer .item{-webkit-border-radius:10px;border-radius:10px;background-color:rgba(252,254,250,.25);text-align:center;padding:25px 23px 25px 18px;border:2px solid rgba(252,254,250,0);min-height:369px}
+.who_need_lp .who_need_lp_slider .owl-stage-outer .item{position:relative;-webkit-border-radius:10px;border-radius:10px;background-color:rgba(252,254,250,.25);text-align:center;padding:25px 23px 25px 18px;border:2px solid rgba(252,254,250,0);min-height:369px}
 .who_need_lp .who_need_lp_slider .owl-stage-outer .item:hover{background:#fff;border:2px solid #FD4027}
 .who_need_lp .who_need_lp_slider .owl-stage-outer .item:hover p{color:#434b52}
 .who_need_lp .who_need_lp_slider .owl-stage-outer .item:hover i{background:#fd4027}
@@ -761,6 +761,7 @@ h2:after{width:420px;left:-webkit-calc(50% - 210px);left:calc(50% - 210px)}
 .header{height:auto;display:block;padding-top:55px}
 .header_nav{margin:27px 0 0 8%}
 .why_we .item p{font-size:29px}
+figure.snip1321 figcaption{padding:0 20px}
 }
 @media only screen and (max-width:992px){.icon_investments,.icon_payback{height:69px;display:inline-block;background-image:url(../img/sprite.png)}
 .icon_investments{background-position:-632px -235px;width:68px}
@@ -813,6 +814,7 @@ h2:after{width:50%;left:25%}
 }
 @media only screen and (max-width:400px){.header_info{display:none}
 .dm-modal{padding:50px 20px 30px}
+.examples_our_work .view-more-block figure{width:100%}
 }
 @media only screen and (min-width:993px){.header_nav{display:inline-block!important}
 }

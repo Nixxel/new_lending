@@ -37,7 +37,7 @@ $(document).ready(function() {
             992 : {
                 items: 3
             }
-}
+        }
     });
 
     // View more
@@ -54,7 +54,7 @@ $(document).ready(function() {
     }
     if($(document).width() <= 768 ) {
         $('button.view-more').click(function() {
-            $.getJSON('ajax/portfolio.json', function(data) {
+            $.getJSON('./ajax/portfolio.json', function(data) {
                 if(data.links[countClicksPortfolioForMobile] === undefined) {
                     $('.view-more').hide();
                     return;
@@ -76,7 +76,6 @@ $(document).ready(function() {
                     }
                     newPortfolioItem(data);
                 });
-                console.log(i);
             }
         });
     }
