@@ -307,6 +307,21 @@ html .loader
 					&:hover
 						text-decoration: none
 						color: $color_red
+						transition: all .5s
+					&.active
+						color: $color_red
+						transition: all .5s
+				&.menu__line
+					position: absolute
+					top: 80%
+					left: 0
+					width: 50px
+					height: 2px
+					pointer-events: none
+					border-width: 0 45px
+					background: #d94f5c
+					transition: transform 0.5s
+					transition-timing-function: cubic-bezier(1, 0.01, 0, 1.22)
 	&_info
 		margin-top: 15px
 		float: right
