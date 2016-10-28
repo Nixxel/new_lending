@@ -17,10 +17,15 @@ function onScroll(event){
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.outerHeight() > scrollPos) {
             $('.header_nav a').removeClass("active");
             currLink.addClass("active");
-            // var w = $(currLink).width()
-            // $('.dsf').css({
-            //     'left' => '1',
-            // }); 
+            var w = $(currLink).width()
+            if( w < 50 ) {
+                
+            }
+            var left = $(currLink).position().left;
+            console.log(left);
+            $('.menu__line').css({
+                'left': left ,
+            });
         }
         else{
             currLink.removeClass("active");
@@ -39,7 +44,7 @@ $(document).ready(function() {
 
         $('.header_nav a').each(function () {
             $(this).removeClass('active');
-        })
+        });
         $(this).addClass('active');
 
         var target = this.hash,
