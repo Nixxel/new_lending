@@ -1,5 +1,5 @@
 .dm-cell,.dm-modal,.subtitle,h2{text-align:center}
-.close:hover,.header_info .header_phone:hover{text-decoration:none}
+.close:hover,.header_info .header_phone:hover,.header_nav ul li a:focus{text-decoration:none}
 .btn{width:301px;height:60px;background:0 0;border:1px solid #FD4027;-webkit-border-radius:5px;border-radius:5px;color:#fd4027;font:18px RobotoRegular,Arial,sans-serif;line-height:1.6}
 .btn:focus,.btn:hover{background-color:#fd4027}
 .btn:hover{color:#fff;font:18px RobotoBold,Arial,sans-serif;line-height:1.6}
@@ -72,7 +72,7 @@ html .loader .loader_inner{background-image:url(../img/preloader.gif);background
 .header_nav ul li a{color:#fff;font:14px RobotoLight,Arial,sans-serif;line-height:1.6}
 .header_nav ul li a:hover{text-decoration:none;color:#fd4027;-webkit-transition:all .5s;transition:all .5s}
 .header_nav ul li a.active{color:#fd4027;-webkit-transition:all .5s;transition:all .5s}
-.header_nav ul li.menu__line{position:absolute;top:80%;left:0;width:50px;height:2px;pointer-events:none;border-width:0 45px;background:#d94f5c;-webkit-transition:-webkit-transform .5s;transition:-webkit-transform .5s;transition:transform .5s;transition:transform .5s,-webkit-transform .5s;-webkit-transition-timing-function:cubic-bezier(1,.01,0,1.22);transition-timing-function:cubic-bezier(1,.01,0,1.22)}
+.header_nav ul li.menu__line{position:absolute;top:30px;left:0;width:50px;height:2px;pointer-events:none;border-width:0 45px;background:#d94f5c;-webkit-transition:all .8s;transition:all .8s;-webkit-transition-timing-function:cubic-bezier(.45,-.67,.53,1.63);transition-timing-function:cubic-bezier(.45,-.67,.53,1.63)}
 .header_info{margin-top:15px;float:right}
 .header_info .header_phone{color:#fff;font:18px RobotoBold,Arial,sans-serif;line-height:1.6}
 .header_info .header_phone:before{background-image:url(../img/sprite.png);background-position:-632px -460px;width:26px;height:26px;margin:-2px 6px 0 0}
