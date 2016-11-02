@@ -1113,6 +1113,7 @@ figure.snip1321 figcaption{padding:0 20px}
 .header_nav{width:100%;position:absolute;top:100%;left:-100%;-webkit-transition:left 1s;transition:left 1s;background:rgba(0,0,0,.8);border-top:1px solid #fff;margin:0;padding:10px 0 20px}
 .header_nav.active{left:0;-webkit-transition:left 1s;transition:left 1s}
 .header_nav li{display:block;width:100%;text-align:center;margin:10px 0}
+.header_nav li.menu__line{-webkit-transition:top .8s!important;transition:top .8s!important;-webkit-transition-timing-function:cubic-bezier(.45,-.67,.53,1.63);transition-timing-function:cubic-bezier(.45,-.67,.53,1.63);left:-webkit-calc(50% - 25px)!important;left:calc(50% - 25px)!important}
 .header_form{margin-top:70px}
 .header_form input[type=submit],.header_form input[type=text]{font-size:16px;height:45px}
 .what_is_landing{padding:38px 0 66px}
