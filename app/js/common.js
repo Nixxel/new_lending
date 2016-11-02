@@ -6,6 +6,8 @@ $(function () {
     //      return $(this).attr("src").replace(".svg", ".png");
     //  });
     // };
+
+
 });
 
 function onScroll(event){
@@ -33,9 +35,10 @@ function onScroll(event){
             // currLink.removeClass("active");
         }
     });
-} 
+}
 
 $(document).ready(function() {
+
 
     onScroll();
     $(document).on("scroll", onScroll);
@@ -103,6 +106,27 @@ $(document).ready(function() {
         }
     });
 
+
+    $(".comment_slider").owlCarousel({
+        loop: true,
+        items: 2,
+        dots: false,
+        nav: true,
+        navText: [],
+        margin: 50,
+        responsive : {
+            320 : {
+                items: 1
+            },
+            480 : {
+                items: 2
+            },
+            992 : {
+                items: 2
+            }
+        }
+    });
+
     // View more
     var countClicksPortfolioForMobile = 0;
     function newPortfolioItem(data) {
@@ -159,8 +183,8 @@ $(document).ready(function() {
     // для инициализации tooltips
     // $( document ).tooltip({
     //   track: true
-    // });  
-    // скролл по ссылке с атрибутом href 
+    // });
+    // скролл по ссылке с атрибутом href
     // $(".header_nav a[href*=#]").on("click", function(e) {
     //     e.preventDefault();
     //     var anchor = $(this);
@@ -203,15 +227,15 @@ $(document).ready(function() {
             /* Работаем с событием клика по элементам выпадающего списка */
             $('.drop').find('li').click(function() {
 
-                /* Заносим в переменную HTML код элемента 
+                /* Заносим в переменную HTML код элемента
                 списка по которому кликнули */
                 var selectResult = $(this).html();
 
-                /* Находим наш скрытый инпут и передаем в него 
+                /* Находим наш скрытый инпут и передаем в него
                 значение из переменной selectResult */
                 $(this).parent().parent().find('input').val(selectResult);
 
-                /* Передаем значение переменной selectResult в ссылку которая 
+                /* Передаем значение переменной selectResult в ссылку которая
                 открывает наш выпадающий список и удаляем активность */
                 $(this).parent().parent().find(".slct").removeClass('active').html(selectResult);
                 $(".slct_arrow").removeClass('active');
@@ -230,7 +254,7 @@ $(document).ready(function() {
         /* Предотвращаем обычное поведение ссылки при клике */
         return false;
     });
-    // Открываем модальное окно  
+    // Открываем модальное окно
     $(".modal").click(function() {
         var id = $(this).data('modal');
         var txt =  $(this).data('info');
@@ -271,7 +295,7 @@ $(document).ready(function() {
             var pattern = /^\d[\d\(\)\-]{4,14}\d$/;
             if ($(this).val() == '') { // если пустое
                 $(this).siblings().addClass('form_error');
-                error.push(true); // ошибка 
+                error.push(true); // ошибка
                 if ($(this).siblings().hasClass('input_error_phone')) {
                     $(this).siblings().removeClass('input_error_phone').text("").prepend("Заполните поле<div class='modal_error_triangle'></div><div class='modal_error_chest_img'></div>");
                 }
@@ -281,7 +305,7 @@ $(document).ready(function() {
                     error.push(false); // нет ошибок
                 } else {
                     $(this).siblings().addClass('input_error_phone form_error').text("").prepend("Введите правильный телефон<div class='modal_error_triangle'></div><div class='modal_error_chest_img'></div>");
-                    error.push(true); // ошибка  
+                    error.push(true); // ошибка
                 }
             }
             $(this).focus(function() {
@@ -304,7 +328,7 @@ $(document).ready(function() {
                     error.push(false); // нет ошибок
                 } else {
                     $(this).siblings().addClass('input_error_email form_error').text("").prepend("Введите правильный Email<div class='modal_error_triangle'></div><div class='modal_error_chest_img'></div>");
-                    error.push(true); // ошибка  
+                    error.push(true); // ошибка
                 }
             }
             $(this).focus(function() {
@@ -384,6 +408,10 @@ $(document).ready(function() {
     }
     // remove br
     remove_br();
+    // init calculate
+    init_calc();
+    // Calculator tab
+    calc_tab();
 });
 
 $(".loader_inner").fadeOut();
@@ -419,3 +447,145 @@ function remove_br(){
         $('.subtitle br').remove();
     }
 }
+
+// Calculator tab
+function calc_tab() {
+    $('.calculate .col_custom_2 button').on('click', function() {
+        var data = $(this).data('slide');
+        $('.calculate .col_custom_2 button').removeClass('active');
+        $(this).addClass('active');
+        $('.calculate .slide_calc_wrap').removeClass('active');
+        $('.calculate .slide_calc_wrap[data-slide='+data+']').addClass('active');
+        calc_slide();
+        set_value_slider();
+        return false;
+    })
+}
+
+// Calculator
+function init_calc(){
+    // standart
+    init_slider( $( "#custom-handle span" ), $( "#slider" ), $('#input-slider-1'), 0, 500, 20 );
+    init_slider( $( "#custom-handle-2 span" ), $( "#slider-2" ),$('#input-slider-2'), 0, 300, 10, 100 );
+    init_slider( $( "#custom-handle-3 span" ), $( "#slider-3" ), $('#input-slider-3'), 300, 600, 10, 400 );
+    // premium
+    init_slider( $( "#custom-handle-4 span" ), $( "#slider-4" ), $('#input-slider-4'), 0, 400, 20, 50 );
+    init_slider( $( "#custom-handle-5 span" ), $( "#slider-5" ),$('#input-slider-5'), 0, 300, 10, 100 );
+    init_slider( $( "#custom-handle-6 span" ), $( "#slider-6" ), $('#input-slider-6'), 300, 600, 10, 400 );
+    // gold
+    init_slider( $( "#custom-handle-7 span" ), $( "#slider-7" ), $('#input-slider-7'), 0, 500, 20, 90 );
+    init_slider( $( "#custom-handle-8 span" ), $( "#slider-8" ),$('#input-slider-8'), 0, 300, 10, 100 );
+    init_slider( $( "#custom-handle-9 span" ), $( "#slider-9" ), $('#input-slider-9'), 300, 600, 10, 400 );
+    // standart
+    init_change( $( "#input-slider-1" ), $( "#slider" ) );
+    init_change( $( "#input-slider-2" ), $( "#slider-2" ) );
+    init_change( $( "#input-slider-3" ), $( "#slider-3" ) );
+    // premium
+    init_change( $( "#input-slider-4" ), $( "#slider-4" ) );
+    init_change( $( "#input-slider-5" ), $( "#slider-5" ) );
+    init_change( $( "#input-slider-6" ), $( "#slider-6" ) );
+    // gold
+    init_change( $( "#input-slider-7" ), $( "#slider-7" ) );
+    init_change( $( "#input-slider-8" ), $( "#slider-8" ) );
+    init_change( $( "#input-slider-9" ), $( "#slider-9" ) );
+
+    calc_slide_change();
+
+}
+
+function calc_slide_change(){
+    $('.slide_calc_wrap.active input').on( "change", function() {
+        calc_slide();
+    });
+}
+function calc_slide() {
+    var res = 0;
+    var quantity_order = $('.slide_calc_wrap.active input[name=quantity_order]').val();
+    var cost_goods = $('.slide_calc_wrap.active input[name=cost_goods]').val();
+    var price_goods = $('.slide_calc_wrap.active input[name=price_goods]').val();
+    var price = $('.slide_calc_wrap.active input[name=price]').val();
+    res = (price_goods - cost_goods) * quantity_order;
+    $('#slide_porfit span').html( parseInt(res) );
+    $('#slide_time span').html(  parseInt( (price/res) *30 )  );
+
+}
+function set_value_slider(){
+    var data = $('.slide_calc_wrap.active').data('slide');
+    var quantity_order = $('.slide_calc_wrap.active input[name=quantity_order]').val();
+    var cost_goods = $('.slide_calc_wrap.active input[name=cost_goods]').val();
+    var price_goods = $('.slide_calc_wrap.active input[name=price_goods]').val();
+
+    $('.slide_calc_wrap.active .slide_item').eq(0).find('.ui-slider-handle span').html(quantity_order);
+    $('.slide_calc_wrap.active .slide_item').eq(1).find('.ui-slider-handle span').html(cost_goods);
+    $('.slide_calc_wrap.active .slide_item').eq(2).find('.ui-slider-handle span').html(price_goods);
+
+}
+function init_change( input, slider ){
+    input.on( "change", function() {
+        var val = $(this).val();
+        var min = slider.slider( "option", "min" );
+        var max = slider.slider( "option", "max" );
+        var res = 0;
+        if( val < min ) {
+            res = min;
+            input.val( res );
+        }
+        else if( val > max ) {
+            res = max;
+            input.val( max );
+        } else {
+            res = val;
+        }
+        slider.find('.ui-slider-handle span').html(res);
+        slider.slider( "value", res );
+    });
+}
+function init_slider(handle_text, slider, input, min, max, step, value ) {
+    if( min == undefined ) {
+        min = 0;
+    }
+    if( max == undefined ) {
+        max = 300;
+    }
+    if( step == undefined ) {
+        step = 10;
+    }
+    if( value == undefined ) {
+        value = 100;
+    }
+    slider.slider({
+        range: "min",
+        value:value,
+        min: min,
+        max: max,
+        step: step,
+        create: function () {
+            handle_text.text($(this).slider("value"));
+            input.val(value);
+            calc_slide();
+        },
+        slide: function (event, ui) {
+            handle_text.text(ui.value);
+            input.val(ui.value);
+            calc_slide();
+        }
+    });
+}
+$('.select_service p').on('click', function() {
+    $(this).toggleClass('active');
+    $('.select_service ul').slideToggle('slow').toggleClass('active');
+});
+$('.select_service ul li').on('click', function() {
+    var data = $(this).data('slide');
+    $('.select_service ul li').removeClass('active');
+    $(this).addClass('active');
+
+    $('.select_service p').html( $(this).text() );
+    $('.calculate .slide_calc_wrap').removeClass('active');
+    $('.calculate .slide_calc_wrap[data-slide='+data+']').addClass('active');
+    $('.select_service ul').slideToggle('slow').toggleClass('active');
+    $('.select_service p').removeClass('active');
+    calc_slide();
+    set_value_slider();
+    return false;
+});

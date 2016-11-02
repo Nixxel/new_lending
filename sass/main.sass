@@ -5,7 +5,8 @@
 // loads Libs SASS
 @import "app/libs/animate/animate.sass"
 @import "app/libs/owl.carousel/assets/owl.carousel.sass"
-
+@import "app/libs/jquery/jquery-ui.min"
+ 
 *::-webkit-input-placeholder
 	color: #666
 	opacity: 1
@@ -320,31 +321,434 @@ body textarea:required:valid
     .view-more
         margin-top: 35px
 
-// End examples_our_work
-// Секия footer
-.foot_phone
-    float: right
-    margin-top: 110px
-.foot_main
-    font: 20px "IntroRegular" 
-    color: rgb(255,255,255)
-.foot_team
-    margin-top: 80px
-    margin-bottom: 0px
-.foot_white
-    font: 54px "IntroRegular" 
-    color: rgb(255,255,255)
-    margin: 0px
-.foot_lawer
-    margin-top: 80px
-    text-align: center
-    font: 15px "RobotoRegular" 
-    color: rgb(255,255,255)
-.footer
-	background-color: #1c1f21
-	height: 400px
-	flex: 0 0 auto	
 
+
+// Секия table_money
+
+.table_money
+    background-image: url(../img/bg_table_money.png)
+    img
+        margin: 1% 39%
+    h2
+        color: rgb(255,255,255)
+    h3
+        text-align: center
+        margin: 0px
+        font: 35px "RobotoBold"
+        color: rgb(255,255,255)
+    h4
+        text-align: center
+        font: 35px "RobotoBold"
+        margin: 5px 0px
+    li
+        list-style-type: none
+    .table_margin
+        margin: 60px 0px
+    .standart_head
+        margin-top: 20px
+        padding: 20px
+        border-radius: 10px 10px 0px 0px 
+        background-image: url(../img/bg_standart_head.jpg)
+        h4
+            color: #363737
+    .premium_head
+        padding: 20px 20px 40px 20px
+        box-shadow: 0px 3px 15px rgb(255,255,255)
+        border-radius: 10px 10px 0px 0px           
+        background-image: url(../img/bg_premium_head.jpg)
+        h4
+            color: #6a180e
+    .gold_head
+        margin-top: 20px
+        padding: 20px
+        border-radius: 10px 10px 0px 0px
+        background-image: url(../img/bg_gold_head.jpg)
+        h4
+            color: #4d402c
+    .standart
+        padding: 10px 0px
+        margin-top: -16px
+        background-image: url(../img/bg_standart.png)
+        border-radius: 0px 0px 10px 10px
+    .premium
+        padding:  10px 0px
+        box-shadow: 0px 3px 15px rgb(255,255,255)
+        margin-top: -16px
+        background-image: url(../img/bg_premium.png)
+        border-radius: 0px 0px 10px 10px
+    .gold_margin
+        margin-bottom: 16px !important
+    .ok
+        margin-bottom: 0px
+        color: #303c48
+        li:before
+            content: ''
+            display: inline-block
+            @include sprite($ok)
+            
+    .non
+        margin-top: 0px
+        color: #c3ccd4
+        li:before
+            content: ''
+            display: inline-block
+            @include sprite($non)
+            
+    button
+        margin: 10px  30px      
+// dop_geting
+
+.dop_geting
+    background-color: #fdfefa
+    text-align: center
+    i
+        margin: 0% 30%
+    strong
+        display: block 
+    .dop_i_1
+        display: inline-block
+        @include sprite($dop-1)
+    .dop_i_2
+        display: inline-block
+        @include sprite($dop-2)
+    .dop_i_3
+        display: inline-block
+        @include sprite($dop-3)
+    .dop_margin
+        margin: 30px 0px 60px 0px
+    span
+        color: #fd4027
+
+// Секия Calculate
+
+.calculate
+    background-image: url('../img/bg_calculate.jpg')
+    padding: 59px 0 81px
+    .select_service
+        display: none
+    h2
+        color: rgb(255,255,255)
+        margin-bottom: 58px
+    li
+        color: rgb(255,255,255)
+        list-style-type: none 
+        text-align: center
+    .col_custom_2
+        padding-top: 3px
+    .calculate_info
+        margin: 0
+        li
+            margin-bottom: 36px
+            &:first-child
+                margin-bottom: 40px
+    .calculate_inputs
+        padding-top: 66px
+        input
+            margin-bottom: 30px
+            padding-left: 20px
+    button
+        border: none
+        border-radius: 10px
+        width: 100px
+        outline: none
+        &.active
+            background: #f73e26
+            color: $color_white
+    .wrap_slide_input
+        display: none
+        &.active
+            display: block
+    .slide_calc_wrap
+        padding-top: 36px
+        display: none
+        &.active
+            display: block
+        .slide_item
+            margin-bottom: 33px
+            span
+                display: inline-block
+                vertical-align: top
+                padding-top: 2px
+                @include font($color_white, 14px, $font_RobotoRegular)
+                width: 24px
+        .custom_slider
+            width: 85%
+            height: 12px
+            display: inline-block
+            position: relative
+            background-color: #FFF
+            border: 1px solid #F00
+            box-shadow: inset 0.1px 2px 5px rgba(0, 0, 0, 0.19), inset 0 0 3px #FFF
+            border-radius: 10px
+            max-width: 350px
+            .wrap_handle
+                position: relative
+                width: calc(100% - 13px)
+            .ui-slider-handle
+                width: 18px
+                height: 18px
+                position: absolute
+                top: -3px
+                z-index: 2
+                background-color: #FFF  !important
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0) 100%) !important
+                border: none !important
+                box-shadow: inset 0 0 4px #2F3436 !important
+                margin-left: -2px
+                outline: none !important
+                border-radius: 50%
+                &:after
+                    @extend %before
+                    width: 6px
+                    height: 6px
+                    border-radius: 50%
+                    margin: auto
+                    position: absolute
+                    top: 0
+                    left: 0
+                    right: 0
+                    bottom: 0
+                    background: #2f3436
+                span
+                    display: inline-block
+                    text-align: center
+                    position: relative
+                    top: -24px
+                    left: calc(50% - 15px)
+                    width: 30px
+                    height: 15px
+                    background-color: #E5E5E5
+                    border: 1px solid #C8C8C8
+                    @include font(#2f3436, 11px, $font_RobotoRegular, 8px)
+                    border-radius: 2px
+                    &:after
+                        @extend %before
+                        width: 0
+                        height: 0
+                        border-style: solid
+                        border-width: 5px 3px 0 3px
+                        border-color: #E5E5E5 transparent transparent transparent
+                        position: absolute
+                        bottom: -5px
+                        left: calc(50% - 3px)
+        .ui-slider-range-min
+            position: relative
+            top: 2px
+            left: 2px
+            height: 6px
+            background-color: #FD4027
+            border: none
+            border-radius: 3px 0 0 3px
+        input
+            border: none
+            border-radius: 5px
+            width: 100px
+            outline: none
+            display: inline-block
+            margin-left: 20px
+            padding-left: 20px
+    .slide_result
+        p
+            @include font($color_red, 18px, $font_RobotoRegular)
+            margin-bottom: 30px
+            text-align: center
+            padding-right: 120px
+
+// Секия How we work
+
+.how_we_work
+    background-image: url('../img/bg_how_we_work.jpg') no-repeat center
+    i
+        position: absolute
+        display: inline-block
+        @include sprite($big-arrow)
+        margin-top: -150px 
+        margin-left: -40px
+        margin-bottom: -210px
+    .video-overlay 
+        position: absolute
+        width: 100%
+        background: url(../img/pattern.png) no-repeat center
+        background-size: cover   
+    video
+        display: inline-block
+        vertical-align: baseline
+        min-width: 100%
+        margin-top: -305px
+        min-height: 100%
+.scheme_work 
+    background-size: cover
+    padding-bottom: 30px
+.scheme_work .all-scheme 
+    max-width: 1000px
+    margin: 0 auto
+.scheme_work .tomato_line, .scheme_work .brown_line 
+    max-width: 500px
+.scheme_work .row > div 
+    position: relative
+    padding-left: 35px
+.scheme_work .row > div p 
+    text-align: center
+    font: 16px "RobotoBold"
+    color: #434b52
+    margin-left: -26px
+.scheme_work .row 
+    div p span 
+    color: #fd4027
+.title_block 
+    font-size: 17px
+    margin-top: -48px
+    margin-left: -20px
+    white-space: nowrap
+    span
+        color: #fd4027
+.scheme_work .row > div:after 
+    content: ''
+    display: block
+    width: 79px
+    height: 19px
+    background: url(../img/icon/arrow_how_we_work.png) no-repeat center
+    position: absolute
+    top: 100px
+    right: -32px
+.scheme_work .row > div:nth-child(4) 
+    width: 23%
+.scheme_work .row > div:nth-child(4) p 
+    margin-left: -2px
+.scheme_work .all-scheme .row:first-of-type 
+    margin-bottom: 90px
+.scheme_work .all-scheme .row:first-of-type > div:nth-child(4):after 
+    content: ''
+    background: url(../img/big_arrow_progress.png) no-repeat center
+    width: 1052px
+    height: 377px
+    right: -20px
+.scheme_work :last-of-type > div:last-child:after 
+    content: ''
+    display: none; 
+.scheme_work .number_process 
+    color: #fd4027
+    font: 30px "RobotoBold"
+    width: 90px
+    height: 90px
+    border: 1px dashed #fd4027
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    -ms-border-radius: 100%
+    border-radius: 100%
+    overflow: hidden
+    line-height: 65px
+    padding-left: 20px 
+.scheme_work .for_icon 
+    background: #545656
+    -webkit-border-radius: 100%
+    -moz-border-radius: 100%
+    -ms-border-radius: 100%
+    border-radius: 100%
+    position: relative
+    width: 150px
+    height: 150px
+    top: -55px
+    left: 10px
+.scheme_work .for_icon img 
+    position: absolute
+    top: 0px
+    right: 0px
+    bottom: 0px
+    left: 0px
+    margin: auto
+
+
+
+// Секия Comments
+
+.comments
+    background-image: url('../img/bg_comments.jpg')
+.tips_up 
+    position: absolute
+    margin: -85px 0px 0px -30px
+
+.tips_down 
+    position: absolute
+    margin: 18px 0px 0px 437px
+
+
+.comment_slider .item
+    padding: 60px 30px 30px 30px
+    border-radius: 10px
+    max-width: 570px
+    margin: 55px 0px 60px 29px 
+    border: 2px solid #fd4027
+    background-color: #fdfefa
+
+.talk-about-us_photo 
+    border: 2px solid #fd4027
+    position: absolute
+    margin: -115px 0px 0px 200px
+    border-radius: 50%
+    height: 100px
+    width: 100px
+    background-image: url('../img/dog.bmp')
+
+
+// Секия LP
+
+.lp
+    text-align: center
+    background-image: url('../img/bg_lp.jpg')
+    color: rgb(255,255,255)
+    h2
+        font: 42px "IntroRegular" 
+        color: rgb(255,255,255)
+    strong
+        font: 20px "IntroRegular"
+    button
+        margin: 50px 0px
+    .lp_margin
+        margin: 55px 0px
+
+// Секия footer
+
+
+footer
+    background-image: url('../img/bg_footer.jpg')
+    height: 420px
+    flex: 0 0 auto  
+
+
+.foot_p
+    margin: 100px 0px
+    float: left
+    color: rgb(255,255,255)
+    font: 60px "RobotoBold" 
+    .foot_quest
+        letter-spacing: 1px
+        font: 70px "RobotoBold"
+        color: #fd4027
+
+.foot_link
+    margin: 110px 0px
+    float: right
+    a
+        color: rgb(255,255,255)
+        font: 28px "RobotoBold"
+.phone:before
+    content: ''
+    display: inline-block
+    @include sprite($foot-phone)
+.skype:before
+    content: ''
+    display: inline-block
+    @include sprite($foot-skype)
+.mail:before
+    content: ''
+    display: inline-block
+    @include sprite($foot-mail)
+
+.foot_danger
+    margin-bottom: 20px
+    text-align: center
+    color: rgb(255,255,255)
 
 //ALWAYS END
 @import "media"
